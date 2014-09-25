@@ -1,0 +1,76 @@
+source 'https://rubygems.org'
+
+ruby '2.1.2'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.1.4'
+
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 4.0.3'
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails', '~> 4.0.0'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer',  platforms: :ruby
+
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '3.1.0'
+# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+gem 'turbolinks'
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '~> 2.0'
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', '~> 0.4.0',          group: :doc
+
+# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+gem 'spring',        group: :development
+
+# Use ActiveModel has_secure_password
+# gem 'bcrypt', '~> 3.1.7'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Use Capistrano for deployment
+# gem 'capistrano-rails', group: :development
+
+# Use debugger
+# gem 'debugger', group: [:development, :test]
+
+gem 'thin'
+
+gem 'spree', path: "../extensions/spree"    # branch: '2-3-stable', '2.3.1', 'chaoyee/spree/tree/42697246592373b2cabbd00d1a131a5783353652'
+gem 'spree_gateway',           path: "../extensions/spree_gateway"        # :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-3-stable'
+gem 'spree_auth_devise',       path: "../extensions/spree_auth_devise"    # git:  "https://github.com/spree/spree_auth_devise.git", branch: "2-3-stable"
+gem 'spree_i18n',              path: "../extensions/spree_i18n",          branch: '2-3-stable' # github: 'spree/spree_i18n', branch: '2-3-stable' #'master'
+
+gem 'spree_paypal_express',  github: "radar/better_spree_paypal_express", branch: "2-3-stable"
+gem 'spree-bank-transfer',     path: "../extensions/spree_bank_transfer", require: 'spree_bank_transfer' # :github => "chaoyee/spree_bank_transfer"
+gem 'spree_recently_viewed',   path: "../extensions/spree_recently_viewed", branch: 'master' # github: 'chaoyee/spree_recently_viewed'
+gem 'spree_favorite_products', path: "../extensions/spree_favorite_products"  # github: 'chaoyee/spree_favorite_products'
+gem 'spree_address_book',      path: "../extensions/spree_address_book"      # github: 'chaoyee/spree_address_book'
+gem 'spree_static_content',    path: "../extensions/spree_static_content",  branch: 'master' # github: 'chaoyee/spree_static_content'
+gem 'spree_mail_settings',     path: "../extensions/spree_mail_settings"
+
+gem 'spree_blogging_spree',    path: "../extensions/spree-blogging-spree" # github: 'chaoyee/spree-blogging-spree'
+gem 'spree_contact_us',        path: "../extensions/spree_contact_us",      branch: 'master' # github: 'chaoyee/spree_contact_us'
+
+gem 'spree_editor',            path: "../extensions/spree_editor"
+gem 'spree_simple_sales',      path: "../extensions/spree_simple_sales"
+gem 'spree_claims',            path: "../extensions/spree_claims"
+
+gem 'activemerchant'
+gem 'active_merchant_focas',   path: "../extensions/active_merchant_focas"
+gem 'spree_focas',             path: "../extensions/spree_focas"
+
+group :development do 
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+  gem 'pry'
+  gem 'xray-rails'  
+end
+
+group :production do 
+  gem "mysql2"
+end

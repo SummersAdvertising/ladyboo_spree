@@ -1,0 +1,12 @@
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @claim } %>
+
+<%= form_for @claim, :url => claims_path(order_number: @order_number), :html => { :novalidate => '' } do |f| %>
+  <p>
+    <%= f.text_area :message, {:cols => 60, :rows => 20, :class => 'fullwidth', :id => 'claim_message'} %>
+  </p>
+  <p>
+    <%= f.submit Spree.t(:submit), :alt => Spree.t(:submit), :id => 'claim_submit', :title => Spree.t(:submit) %>
+    &nbsp;&nbsp;
+    <%= link_to Spree.t(:cancel), :back, class: "button" %>
+  </p>  
+<% end %>

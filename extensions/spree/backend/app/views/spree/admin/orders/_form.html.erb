@@ -1,0 +1,75 @@
+ <div data-hook="admin_order_form_fields">
+  <% if @line_item.try(:errors).present? %>
+    <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @line_item } %>
+  <% end %>
+
+  <% if Spree::Order.checkout_step_names.include?(:delivery) %>
+    <%= render :partial => "spree/admin/orders/shipment", :collection => @order.shipments, :locals => { :order => order } %>
+  <% else %>
+    <%= render :partial => "spree/admin/orders/line_items", :locals => { :order => order } %>
+  <% end %>
+  <%= render :partial => "spree/admin/orders/adjustments", :locals => {
+        :adjustments => @order.line_item_adjustments, 
+        :order => order,
+        :title => Spree.t(:line_item_adjustments)
+   } %>
+  <%= render :partial => "spree/admin/orders/adjustments", :locals => {
+        :adjustments => @order.shipment_adjustments, 
+        :order => order,
+        :title => Spree.t(:shipment_adjustments)
+   } %>
+  <%= render :partial => "spree/admin/orders/adjustments", :locals => {
+        :adjustments => @order.adjustments, 
+        :order => order,
+        :title => Spree.t(:order_adjustments)
+   } %>
+
+  <% if order.line_items.exists? %>
+    <fieldset class="no-border-bottom" id="order-total" data-hook="order_details_total">
+      <legend><%= Spree.t(:order_total) %></legend>
+      <span class="order-total"><%= order.display_total %></span>
+    </fieldset>
+  <% end %>
+
+  <!-- Add below -->
+
+  <fieldset id="delivery" data-hook>
+    <legend align="center"><%= Spree.t("invoice.delivery_time") %></legend>
+    <p>  
+      <%= label_tag :delivery_time, Spree.t("invoice.delivery_time") %>
+      <%= order.delivery_time %>
+    </p>
+  </fieldset>
+  <fieldset id="invoice" data-hook>
+    <legend align="center"><%= Spree.t("invoice.invoice") %></legend>
+    <p>  
+      <%= label_tag :invoice_type, Spree.t("invoice.invoice_type") %>
+      <%= order.invoice_type %>
+    </p>
+    <p>
+      <%= label_tag :company_tax_id, Spree.t("invoice.company_tax_id") %>
+      <%= order.company_tax_id %>
+    </p>
+    <p>
+      <%= label_tag :invoice_title, Spree.t("invoice.invoice_title") %>
+      <%= order.invoice_title %>
+    </p>
+    <p>
+      <%= label_tag :invoice_address, Spree.t("invoice.invoice_address") %>
+      <%= order.invoice_address %>
+    </p>  
+  </fieldset>
+
+  <!-- Add above -->
+
+  <%= javascript_tag do -%>
+    var order_number = '<%= @order.number %>';
+    var shipments = [];
+
+    <% @order.shipments.each do |shipment| %>
+      shipments.push(<%== shipment.to_json(:root => false, :include => [:inventory_units, :stock_location]) %>);
+    <% end %>
+
+    <%= render :partial => 'spree/admin/shared/update_order_state', :handlers => [:js] %>
+  <% end -%>
+</div>

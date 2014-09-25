@@ -1,0 +1,99 @@
+zh-TW:
+  spree:
+    material: 材質
+    remarks: 洗滌說明
+    model: 模特兒
+    product_size_table: 尺寸表
+    bust:                 胸圍
+    waist:                腰圍   
+    arm_circumference:    臂圍   
+    hip:                  臀圍   
+    thigh:                大腿圍 
+    clothes_length:       衣長   
+    skirt_length:         裙長   
+    pants_length:         褲長   
+    sleeve_length:        袖長   
+    straps_length:        肩帶長 
+    shoulder_length:      肩寬   
+    sleeve_width:         袖口   
+    collar_width:         領口   
+    back_rise:            後檔   
+    front_rise:           前檔
+
+    choose_a_taxon_to_sort_products_for: 選擇分類以顯示產品
+    drag_on_the_products_to_sort_them: 拖拉圖示以排序
+    taxon_is_already_linked_to_this_product: 產品已在此類別中
+    add_and_refresh: 加入或更新
+    cancel: 取消
+    no_product: 沒有產品
+    no_icon: 沒有儲存的圖示
+    all_time: 不限時
+    afternoon: 下午 12:00-17:00
+    night: 晚上 17:00以後
+
+    search: 搜尋
+
+    forward_to_credit_card_payment: 按下至「信用卡付費頁面」
+    press_to_process: 按下後開始處理
+    focas_parameters_are_not_set: Focas付費方式之參數未設定
+
+    order_processed_successfully: 付費已經成功。
+    payment_has_been_cancelled: 付費未成功，已取消。
+
+    type_2_invoice: 二聯式發票
+    type_3_invoice: 三聯式發票
+    sub_menu:
+        option_types: 選項
+        properties: 屬性
+        prototypes: 原型
+        taxonomies: 產品分類方式設定
+        taxons:  產品分類表列
+    link:
+        remove: 刪除
+    active_record: 
+        price: 價格    
+        name:  產品名稱
+    admin:
+        tab:
+            combination_layouts: 首頁管理    
+    combinationlayout:        
+        combination_layout_was_successfully_updated: 主題已經成功更新 
+        frontpage_management: 首頁管理
+        text: 文字欄
+        no_taxon: 尚未設定主題
+        id: 主題設定編號
+        taxon: 主題
+        select_taxon: 選擇主題
+        text_1: "文字第一行：" 
+        text_2: "文字第二行：" 
+        text_3: "文字第三行：" 
+        text_4: "文字第四行：" 
+        text_5: "文字第五行："
+        submit: "更新"
+        slider: 輪播主題
+        series_layout: 系列主題
+        combination_layout: 穿搭主題
+        layout_1: 版型 1
+        layout_2: 版型 2
+        layout_3: 版型 3
+        layout_4: 版型 4
+        combination_layout_setting: 穿搭主題版型設定
+        layout: 版型設定
+    invoice:
+        delivery_time: 配送時間
+        invoice: 發票資訊
+        company_tax_id: 統一編號
+        invoice_type: 發票種類
+        invoice_title: 發票抬頭
+        invoice_address: 發票地址    
+  number:
+    # Used in number_to_currency()
+    currency:
+      format:
+        # Where is the currency sign? %u is the currency unit, %n the number (default: $5.00)
+        format: "%u %n"
+        unit: "NT"
+        # These three are to override number.format and are optional
+        separator: ","
+        delimiter: "."
+        precision: 2     

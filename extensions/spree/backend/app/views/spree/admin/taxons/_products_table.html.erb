@@ -1,0 +1,46 @@
+<div id="new_product" data-hook></div>
+
+<% unless products.any? %>
+  <div class="no-objects-found">
+    <%= Spree.t('no_product') %>
+  </div>
+<% else %>
+  <%# class="index sortable" id="listing_active_products" %>
+  <table class="index sortable" id="taxon_products_table" data-hook="active_products_table">
+    <colgroup>
+      <col style="width: 15%;">
+      <col style="width: 10%;">
+      <col style="width: 48%;">
+      <col style="width: 10%;">
+      <col style="width: 17%;">
+    </colgroup>
+    <thead>
+      <tr data-hook="admin_active_products_index_headers">
+        <th colspan="3"><%= Spree.t('active_record.name') %></th>
+        <th><%= Spree.t('active_record.price') %></th>
+        <th data-hook="admin_products_index_header_actions" class="actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.each do |product| %> 
+        <tr id="<%= spree_dom_id product %>" product_id=<%= product.id %> data-hook="admin_products_index_rows" class="<%= cycle('odd', 'even')%>">
+          <input id="table_taxon_id" value=<%= @taxon.id %>  name="table_taxon_id" type="hidden">
+          <td class="no-border">
+            <span class="handle"></span>
+          </td>
+          <td class="align-center"><%= mini_image(product) %></td>
+          <td class="align-center"><%= link_to product.name, edit_admin_product_url(product) %></td>
+          <td class="align-center"><%= product.price %></td>
+
+          <td class="actions" data-hook="admin_products_index_row_actions">
+            <p class="actions" data-hook="actions">
+              <%= link_to_edit_url edit_admin_product_url(product), :no_text => true %>
+              &nbsp;
+              <%= link_to_delete product, { :url => delete_product_admin_taxons_path(taxonomy_id: @taxonomy.id, taxon_id: @taxon.id, product_id: product.id), :no_text => true, :name => Spree.t('link.remove') } %>
+            </p>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>

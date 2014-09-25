@@ -1,0 +1,5298 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+/*--------------------------------------*/
+/* Colors
+/*--------------------------------------*/
+/* Spree green    */
+/* Error red      */
+/*--------------------------------------*/
+/* Fonts import from remote
+/*--------------------------------------*/
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic|&subset=latin,cyrillic,greek,greek-ext,latin-ext,cyrillic-ext);
+/*--------------------------------------*/
+/* Font families
+/*--------------------------------------*/
+/*--------------------------------------
+  | Font sizes
+  |--------------------------------------
+  |- Navigation                         
+  |                                    */
+/*|------------------------------------
+  |- Product Listing                         
+  |                                  */
+/*|------------------------------------
+  |- Product Details
+  |                                  */
+/*|------------------------------------
+  |- Basic
+  |                                  */
+/*!
+ *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("/assets/fontawesome-webfont.eot");
+  src: url("/assets/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fontawesome-webfont.woff") format("woff"), url("/assets/fontawesome-webfont.ttf") format("truetype"), url("/assets/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 19, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 29, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 34, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 37, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 40, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 43, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 46, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+
+/* line 50, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+
+/* line 55, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 58, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+
+/* line 65, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+
+/* line 68, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 73, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.pull-right {
+  float: right;
+}
+
+/* line 76, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.pull-left {
+  float: left;
+}
+
+/* line 79, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 82, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 85, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 92, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 95, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 100, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 103, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 108, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 111, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 116, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 120, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+/* line 125, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 133, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 141, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 149, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 157, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 165, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 174, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 180, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 183, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 186, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-inverse {
+  color: #ffffff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 191, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 194, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 197, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 200, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 203, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 206, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 209, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 212, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 215, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 218, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 221, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 224, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 227, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 230, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 233, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 236, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 239, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 242, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 246, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 249, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 252, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 255, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 258, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 261, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 264, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 267, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 270, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 273, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 276, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 280, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 283, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 286, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 289, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 292, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 295, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 298, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 301, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 304, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 307, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 310, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 313, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 316, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 319, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 322, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 325, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 328, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 331, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 334, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 337, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 340, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 343, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 346, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 349, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 352, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 355, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 358, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 362, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 365, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 368, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 373, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 376, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 379, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 382, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 385, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 389, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 392, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 395, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 398, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 401, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 404, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 407, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 410, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 413, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 416, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 419, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 422, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 425, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 428, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 431, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 434, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 437, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 440, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 443, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 446, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 449, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 452, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 455, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 458, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 461, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 464, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 467, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 470, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 473, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 476, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 480, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 483, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 486, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 489, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 492, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 495, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 498, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 501, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 504, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 507, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 510, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 513, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 517, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 520, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 523, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 526, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 529, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 532, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 535, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 538, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 541, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 544, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 547, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 550, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 553, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 556, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 559, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 562, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 565, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 568, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 571, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 575, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 578, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 581, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 584, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 587, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 590, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 593, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 596, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 599, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 602, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 605, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 608, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 611, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 614, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 617, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 620, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 623, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 626, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 629, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 632, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 635, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 638, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 641, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 644, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 647, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 650, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 653, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 656, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 659, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 662, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 665, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 668, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 671, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 674, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 677, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 680, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 683, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 686, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 689, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 692, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 695, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 698, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 701, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 705, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 709, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 712, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 715, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 719, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 723, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 726, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 730, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 733, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 738, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 741, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 744, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 747, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 750, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 753, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 756, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 759, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 762, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 765, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 768, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 771, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 774, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 777, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 780, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 783, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 786, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 789, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 793, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 797, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "\f0dd";
+}
+
+/* line 801, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "\f0de";
+}
+
+/* line 804, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 807, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 811, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 815, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 819, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 822, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 825, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 829, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 832, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 835, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 839, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 842, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 845, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 848, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 851, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 854, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 857, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 860, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 863, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 866, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 869, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 872, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 875, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 878, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 881, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 884, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 887, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 890, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 893, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 896, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 899, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 902, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 905, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 908, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 911, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 914, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 917, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 920, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 923, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 926, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 929, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 933, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 936, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 939, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 942, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 945, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 948, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 952, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 955, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 958, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 961, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 964, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 967, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 970, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 973, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 976, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 979, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 982, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 985, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 988, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 992, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 997, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 1000, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 1003, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 1006, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 1010, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 1013, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 1016, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 1019, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 1022, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 1025, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 1028, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 1031, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 1034, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 1037, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 1040, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 1043, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 1046, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 1049, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 1052, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 1055, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 1058, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 1061, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 1064, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 1067, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 1070, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 1073, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 1076, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 1079, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 1082, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 1085, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 1088, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 1091, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 1094, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 1097, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 1100, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 1103, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 1106, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 1109, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 1112, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 1115, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 1118, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 1121, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 1125, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 1129, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 1133, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 1137, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 1140, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 1144, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 1148, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 1154, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 1159, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 1163, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 1167, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 1170, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 1173, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 1176, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 1179, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 1182, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 1185, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 1188, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 1191, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 1194, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 1197, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 1200, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 1203, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 1206, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 1209, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 1212, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 1215, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 1218, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 1221, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 1224, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 1227, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 1230, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 1233, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 1236, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 1239, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 1242, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 1245, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 1248, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 1251, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 1254, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 1257, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 1260, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 1263, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 1266, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 1269, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 1272, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 1275, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 1278, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 1281, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 1284, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 1287, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 1290, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 1293, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 1296, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 1299, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 1302, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 1305, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 1308, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 1311, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 1314, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 1317, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 1321, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 1324, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 1327, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 1330, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 1334, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 1337, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* line 1340, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-space-shuttle:before {
+  content: "\f197";
+}
+
+/* line 1343, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-slack:before {
+  content: "\f198";
+}
+
+/* line 1346, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-envelope-square:before {
+  content: "\f199";
+}
+
+/* line 1349, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wordpress:before {
+  content: "\f19a";
+}
+
+/* line 1352, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-openid:before {
+  content: "\f19b";
+}
+
+/* line 1357, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "\f19c";
+}
+
+/* line 1361, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "\f19d";
+}
+
+/* line 1364, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-yahoo:before {
+  content: "\f19e";
+}
+
+/* line 1367, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-google:before {
+  content: "\f1a0";
+}
+
+/* line 1370, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-reddit:before {
+  content: "\f1a1";
+}
+
+/* line 1373, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-reddit-square:before {
+  content: "\f1a2";
+}
+
+/* line 1376, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stumbleupon-circle:before {
+  content: "\f1a3";
+}
+
+/* line 1379, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-stumbleupon:before {
+  content: "\f1a4";
+}
+
+/* line 1382, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-delicious:before {
+  content: "\f1a5";
+}
+
+/* line 1385, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-digg:before {
+  content: "\f1a6";
+}
+
+/* line 1389, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pied-piper-square:before,
+.fa-pied-piper:before {
+  content: "\f1a7";
+}
+
+/* line 1392, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-pied-piper-alt:before {
+  content: "\f1a8";
+}
+
+/* line 1395, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-drupal:before {
+  content: "\f1a9";
+}
+
+/* line 1398, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-joomla:before {
+  content: "\f1aa";
+}
+
+/* line 1401, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-language:before {
+  content: "\f1ab";
+}
+
+/* line 1404, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-fax:before {
+  content: "\f1ac";
+}
+
+/* line 1407, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-building:before {
+  content: "\f1ad";
+}
+
+/* line 1410, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-child:before {
+  content: "\f1ae";
+}
+
+/* line 1413, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paw:before {
+  content: "\f1b0";
+}
+
+/* line 1416, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spoon:before {
+  content: "\f1b1";
+}
+
+/* line 1419, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cube:before {
+  content: "\f1b2";
+}
+
+/* line 1422, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cubes:before {
+  content: "\f1b3";
+}
+
+/* line 1425, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-behance:before {
+  content: "\f1b4";
+}
+
+/* line 1428, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-behance-square:before {
+  content: "\f1b5";
+}
+
+/* line 1431, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-steam:before {
+  content: "\f1b6";
+}
+
+/* line 1434, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-steam-square:before {
+  content: "\f1b7";
+}
+
+/* line 1437, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-recycle:before {
+  content: "\f1b8";
+}
+
+/* line 1441, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-automobile:before,
+.fa-car:before {
+  content: "\f1b9";
+}
+
+/* line 1445, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-cab:before,
+.fa-taxi:before {
+  content: "\f1ba";
+}
+
+/* line 1448, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tree:before {
+  content: "\f1bb";
+}
+
+/* line 1451, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-spotify:before {
+  content: "\f1bc";
+}
+
+/* line 1454, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-deviantart:before {
+  content: "\f1bd";
+}
+
+/* line 1457, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-soundcloud:before {
+  content: "\f1be";
+}
+
+/* line 1460, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-database:before {
+  content: "\f1c0";
+}
+
+/* line 1463, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-pdf-o:before {
+  content: "\f1c1";
+}
+
+/* line 1466, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-word-o:before {
+  content: "\f1c2";
+}
+
+/* line 1469, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-excel-o:before {
+  content: "\f1c3";
+}
+
+/* line 1472, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-powerpoint-o:before {
+  content: "\f1c4";
+}
+
+/* line 1477, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "\f1c5";
+}
+
+/* line 1481, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "\f1c6";
+}
+
+/* line 1485, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "\f1c7";
+}
+
+/* line 1489, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "\f1c8";
+}
+
+/* line 1492, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-file-code-o:before {
+  content: "\f1c9";
+}
+
+/* line 1495, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-vine:before {
+  content: "\f1ca";
+}
+
+/* line 1498, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-codepen:before {
+  content: "\f1cb";
+}
+
+/* line 1501, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-jsfiddle:before {
+  content: "\f1cc";
+}
+
+/* line 1507, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-life-bouy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "\f1cd";
+}
+
+/* line 1510, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-o-notch:before {
+  content: "\f1ce";
+}
+
+/* line 1514, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ra:before,
+.fa-rebel:before {
+  content: "\f1d0";
+}
+
+/* line 1518, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-ge:before,
+.fa-empire:before {
+  content: "\f1d1";
+}
+
+/* line 1521, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-git-square:before {
+  content: "\f1d2";
+}
+
+/* line 1524, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-git:before {
+  content: "\f1d3";
+}
+
+/* line 1527, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-hacker-news:before {
+  content: "\f1d4";
+}
+
+/* line 1530, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-tencent-weibo:before {
+  content: "\f1d5";
+}
+
+/* line 1533, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+/* line 1537, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+/* line 1541, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "\f1d8";
+}
+
+/* line 1545, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "\f1d9";
+}
+
+/* line 1548, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-history:before {
+  content: "\f1da";
+}
+
+/* line 1551, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-circle-thin:before {
+  content: "\f1db";
+}
+
+/* line 1554, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-header:before {
+  content: "\f1dc";
+}
+
+/* line 1557, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-paragraph:before {
+  content: "\f1dd";
+}
+
+/* line 1560, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+/* line 1563, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+/* line 1566, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-share-alt-square:before {
+  content: "\f1e1";
+}
+
+/* line 1569, /Users/chaoyee/.rvm/gems/ruby-2.1.2/gems/font-awesome-rails-4.1.0.0/app/assets/stylesheets/font-awesome.css.erb */
+.fa-bomb:before {
+  content: "\f1e2";
+}
+
+/*--------------------------------------*/
+/* Basic styles
+/*--------------------------------------*/
+/* line 13, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #404042;
+  line-height: 18px;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Line style */
+/* line 24, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+hr {
+  height: 0;
+  background-color: transparent;
+  color: transparent;
+  border: none;
+  border-bottom: 1px solid #d9d9db;
+}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+/* line 33, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+::-moz-selection {
+  background: #00adee;
+  color: white;
+  text-shadow: none;
+}
+
+/* line 34, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+::selection {
+  background: #00adee;
+  color: white;
+  text-shadow: none;
+}
+
+/*  j.mp/webkit-tap-highlight-color */
+/* line 37, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+a:link {
+  -webkit-tap-highlight-color: #00adee;
+}
+
+/* line 39, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ins {
+  background-color: #00adee;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 40, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+mark {
+  background-color: #00adee;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*--------------------------------------*/
+/* Links
+/*--------------------------------------*/
+/* line 45, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+a {
+  text-decoration: none;
+  color: #00adee;
+}
+/* line 49, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+a:hover {
+  color: #0088bb;
+}
+/* line 53, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+a:active, a:focus {
+  outline: none;
+}
+
+/*--------------------------------------*/
+/* Lists
+/*--------------------------------------*/
+/* line 61, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul, ol {
+  margin-left: 0;
+  margin-top: 0;
+  -webkit-padding-start: 0px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+/* line 69, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul.inline li, ol.inline li {
+  display: inline-block;
+}
+
+/* line 76, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+dl dt, dl dd {
+  display: inline-block;
+  width: 50%;
+  padding: 5px;
+}
+/* line 81, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+dl dt.odd, dl dd.odd {
+  background-color: #d9d9db;
+}
+/* line 85, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+dl dt {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 89, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+dl dd {
+  margin-left: -23px;
+}
+
+/*--------------------------------------*/
+/* Headers
+/*--------------------------------------*/
+/* line 97, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h1 {
+  font-size: 24px;
+  line-height: 34px;
+}
+
+/* line 98, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h2 {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+/* line 99, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h3 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* line 100, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h4 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* line 101, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h5 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 102, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h6 {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+/* line 104, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #404042;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------*/
+/* Forms
+/*--------------------------------------*/
+/* line 121, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+textarea, input[type="date"],
+input[type="datetime"], input[type="datetime-local"],
+input[type="email"], input[type="month"], input[type="number"],
+input[type="password"], input[type="search"], input[type="tel"],
+input[type="text"], input[type="time"], input[type="url"],
+input[type="week"] {
+  border: 1px solid #d9d9db;
+  padding: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 131, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+textarea:active, textarea:focus, input[type="date"]:active, input[type="date"]:focus,
+input[type="datetime"]:active,
+input[type="datetime"]:focus, input[type="datetime-local"]:active, input[type="datetime-local"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus, input[type="month"]:active, input[type="month"]:focus, input[type="number"]:active, input[type="number"]:focus,
+input[type="password"]:active,
+input[type="password"]:focus, input[type="search"]:active, input[type="search"]:focus, input[type="tel"]:active, input[type="tel"]:focus,
+input[type="text"]:active,
+input[type="text"]:focus, input[type="time"]:active, input[type="time"]:focus, input[type="url"]:active, input[type="url"]:focus,
+input[type="week"]:active,
+input[type="week"]:focus {
+  border-color: #00adee;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+/* line 140, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+textarea.error, input[type="date"].error,
+input[type="datetime"].error, input[type="datetime-local"].error,
+input[type="email"].error, input[type="month"].error, input[type="number"].error,
+input[type="password"].error, input[type="search"].error, input[type="tel"].error,
+input[type="text"].error, input[type="time"].error, input[type="url"].error,
+input[type="week"].error {
+  border-color: #e45353;
+}
+
+/* line 145, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+label.error {
+  display: block;
+  font-size: 11px;
+  color: #e45353;
+  margin-top: 3px;
+}
+
+/* line 152, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+span.required {
+  color: #e45353;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* line 158, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+fieldset {
+  margin: 0;
+  min-width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 168, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+input[type="submit"], input[type="button"],
+input[type="reset"], button, a.button {
+  background-color: #00adee;
+  background-image: none;
+  text-shadow: none;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid rgba(0, 138, 189, 0.75);
+  padding: 6px 10px 5px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -khtml-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -webkit-border-radius: 0px;
+  -khtml-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 194, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+input[type="submit"].large, input[type="button"].large,
+input[type="reset"].large, button.large, a.button.large {
+  padding: 7px 10px;
+  font-size: 14px;
+}
+/* line 199, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+input[type="submit"].gray, input[type="button"].gray,
+input[type="reset"].gray, button.gray, a.button.gray {
+  background-color: #727276;
+  border-color: #59595c;
+}
+/* line 204, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+input[type="submit"]:hover, input[type="button"]:hover,
+input[type="reset"]:hover, button:hover, a.button:hover {
+  background-image: none;
+  background-color: #404042;
+  border-color: #404042;
+  color: white;
+}
+
+/* line 213, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.ie8 a.button {
+  line-height: 16px;
+}
+
+/* line 218, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+input[type="checkbox"], label {
+  vertical-align: middle;
+}
+
+/* line 222, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+a.button {
+  display: inline-block;
+  line-height: 15px;
+  margin-top: -2px;
+  vertical-align: bottom;
+}
+
+/*--------------------------------------*/
+/* Footer
+/*--------------------------------------*/
+/* line 232, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+footer#footer {
+  padding: 10px 0;
+  border-top: 1px solid #d9d9db;
+}
+
+/*--------------------------------------*/
+/* Paragraphs
+/*--------------------------------------*/
+/* line 240, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+p {
+  padding: 10px 0;
+}
+
+/*--------------------------------------*/
+/* Tables
+/*--------------------------------------*/
+/* line 248, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table thead {
+  background-color: #d9d9db;
+  text-transform: uppercase;
+}
+/* line 253, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table thead tr th {
+  padding: 5px 10px;
+}
+/* line 260, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table tbody tr, table tfoot tr {
+  border-bottom: 1px solid #d9d9db;
+}
+/* line 263, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table tbody tr td, table tfoot tr td {
+  vertical-align: middle;
+  padding: 5px 10px;
+}
+/* line 268, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table tbody tr.alt, table tbody tr.odd, table tfoot tr.alt, table tfoot tr.odd {
+  background-color: #eefaff;
+}
+
+/*--------------------------------------*/
+/* Navigation
+/*--------------------------------------*/
+/* line 278, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav#top-nav-bar {
+  text-align: right;
+  margin-top: 20px;
+}
+/* line 283, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav#top-nav-bar ul li {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+/* line 287, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav#top-nav-bar ul li a {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* line 296, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: 1px solid #d9d9db;
+  padding-bottom: 6px;
+}
+/* line 305, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li a {
+  font-size: 16px;
+  padding: 5px;
+}
+/* line 311, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li:first-child a {
+  padding-left: 0;
+}
+/* line 316, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li#link-to-cart {
+  float: right;
+  padding-left: 24px;
+  background: url(/assets/spree/frontend/cart.png) no-repeat left center;
+}
+/* line 321, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li#link-to-cart:hover {
+  border-color: #00adee;
+}
+/* line 324, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li#link-to-cart:hover .amount {
+  border-color: #00adee;
+}
+/* line 329, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li#link-to-cart a {
+  font-weight: normal;
+  font-size: 16px;
+  color: #00adee;
+}
+/* line 334, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav #main-nav-bar li#link-to-cart a .amount {
+  font-size: 18px;
+  font-weight: bold;
+  border-left: 1px solid #d9d9db;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+/* line 347, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+figure#logo img {
+  padding-top: 25px;
+}
+
+/* line 353, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav#taxonomies .taxonomy-root {
+  text-transform: uppercase;
+  border-bottom: 1px solid #d9d9db;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+/* line 362, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+nav#taxonomies .taxons-list li a {
+  font-size: 12px;
+}
+
+/* line 369, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#breadcrumbs {
+  border-bottom: 1px solid #d9d9db;
+  padding: 3px 0;
+  margin-bottom: 15px;
+}
+/* line 375, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#breadcrumbs li a {
+  color: #00adee;
+}
+/* line 378, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#breadcrumbs li span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*--------------------------------------*/
+/* Flash notices & errors
+/*--------------------------------------*/
+/* line 388, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.flash, .errorExplanation {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 394, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.flash.notice, .notice.errorExplanation {
+  background-color: #00adee;
+}
+/* line 397, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.flash.success, .success.errorExplanation {
+  background-color: #8dba53;
+}
+/* line 400, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.flash.error, .errorExplanation {
+  background-color: #e45353;
+}
+
+/* line 409, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.errorExplanation p {
+  font-weight: normal;
+}
+/* line 413, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.errorExplanation ul {
+  list-style: disc outside;
+  margin-left: 30px;
+}
+/* line 417, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.errorExplanation ul li {
+  font-weight: normal;
+}
+
+/*--------------------------------------*/
+/* Main search bar
+/*--------------------------------------*/
+/* line 426, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#search-bar {
+  display: block;
+}
+
+/*--------------------------------------*/
+/* Products
+/*--------------------------------------*/
+/* line 434, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+[data-hook="product_show"] h6 {
+  font-size: 14px;
+}
+
+/* line 439, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.product-section-title {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* line 444, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.add-to-cart {
+  margin-top: 15px;
+}
+/* line 447, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.add-to-cart input[type="number"] {
+  margin-right: 3px;
+  width: 60px;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+
+/* line 455, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+span.price, #checkout-summary table tr[data-hook="item_total"] td:last-child strong, #checkout-summary table #summary-order-total, #order_details td.price span, #order_details td.total span, #order_summary td.price span, #order_summary td.total span, table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.order-total {
+  font-weight: bold;
+  color: #00adee;
+}
+/* line 459, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+span.price.selling, #checkout-summary table tr[data-hook="item_total"] td:last-child strong.selling, #checkout-summary table .selling#summary-order-total, #order_details td.price span.selling, #order_details td.total span.selling, #order_summary td.price span.selling, #order_summary td.total span.selling, table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.selling.order-total {
+  font-size: 20px;
+}
+/* line 462, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+span.price.diff, #checkout-summary table tr[data-hook="item_total"] td:last-child strong.diff, #checkout-summary table .diff#summary-order-total, #order_details td.price span.diff, #order_details td.total span.diff, #order_summary td.price span.diff, #order_summary td.total span.diff, table#cart-detail tbody#line_items tr td.diff[data-hook="cart_item_price"], table#cart-detail tbody#line_items tr td.diff[data-hook="cart_item_total"], div[data-hook="inside_cart_form"] #subtotal span.diff.order-total {
+  font-weight: bold;
+}
+
+/* line 467, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.taxon-title {
+  font-size: 20px;
+}
+
+/* line 471, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.search-results-title {
+  font-size: 14px;
+}
+
+/* line 476, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* line 485, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* line 490, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li a {
+  display: block;
+}
+/* line 493, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li a.info {
+  height: 35px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #bbbbbb;
+  border-bottom: 1px solid #d9d9db;
+  overflow: hidden;
+}
+/* line 503, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li .product-image {
+  border: 1px solid #d9d9db;
+  padding: 5px;
+  min-height: 110px;
+  background-color: white;
+}
+/* line 509, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li .product-image:hover {
+  border-color: #00adee;
+}
+/* line 513, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li .product-image img {
+  max-width: 100%;
+  /* Fluid images for product */
+}
+/* line 519, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+ul#products li .price {
+  color: #00adee;
+  font-size: 16px;
+  padding-top: 5px;
+  display: block;
+}
+
+/* line 528, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.subtaxon-title {
+  text-transform: uppercase;
+}
+/* line 531, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.subtaxon-title a {
+  color: #00adee;
+}
+
+/* line 536, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.search-results-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #d9d9db;
+  margin-bottom: 10px;
+}
+
+/* line 543, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#sidebar_products_search .navigation {
+  margin-bottom: 15px;
+}
+/* line 547, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#sidebar_products_search .filter-title {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 5px;
+  color: #00adee;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 559, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.taxon {
+  overflow: hidden;
+}
+
+/* line 564, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-images #main-image {
+  text-align: center;
+  border: 1px solid #d9d9db;
+  background-color: white;
+}
+/* line 569, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-images #main-image img {
+  min-height: 240px;
+  max-width: 100%;
+  /* Fluid images for product */
+}
+/* line 575, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-images #product-thumbnails li {
+  background-color: white;
+}
+
+/* line 582, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-description .product-title {
+  border-bottom: 1px solid #d9d9db;
+  margin-bottom: 15px;
+  color: #404042;
+  font-size: 24px;
+}
+/* line 589, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-description [data-hook="product-description"] {
+  font-size: 12px;
+  color: #404042;
+}
+
+/* line 595, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-thumbnails {
+  margin-top: 10px;
+}
+/* line 598, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-thumbnails li {
+  margin-right: 6px;
+  border: 1px solid #d9d9db;
+}
+/* line 602, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-thumbnails li img {
+  padding: 5px;
+}
+/* line 606, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-thumbnails li:hover, #product-thumbnails li.selected {
+  border-color: #00adee;
+}
+
+/* line 612, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-properties {
+  border: 1px solid #d9d9db;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 620, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#product-variants ul li {
+  padding: 5px;
+}
+
+/* line 627, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#cart-form #inside-product-cart-form:after {
+  content: " ";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/*--------------------------------------*/
+/* Checkout
+/*--------------------------------------*/
+/* line 640, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.out-of-stock {
+  background: #df0000;
+  color: white;
+  padding: 5px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+/* line 648, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps {
+  list-style: decimal inside;
+  overflow: auto;
+}
+/* line 652, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li {
+  float: left;
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #727276;
+}
+/* line 660, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.current-first, .progress-steps li.current {
+  background-color: #00adee;
+  color: white;
+}
+/* line 665, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.completed-first, .progress-steps li.completed {
+  background-color: #d9d9db;
+  color: white;
+}
+/* line 669, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.completed-first a, .progress-steps li.completed a {
+  color: white;
+}
+/* line 673, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.completed-first:hover, .progress-steps li.completed:hover {
+  background-color: #00adee;
+  color: white;
+}
+/* line 677, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.completed-first:hover a, .progress-steps li.completed:hover a {
+  color: white;
+}
+/* line 680, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.progress-steps li.completed-first:hover a:hover, .progress-steps li.completed:hover a:hover {
+  color: white;
+}
+
+/* line 689, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#payment-methods {
+  list-style: none;
+}
+/* line 693, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#payment-methods li fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* line 702, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#checkout-summary {
+  text-align: center;
+  border: 1px solid #d9d9db;
+  margin-top: 23px;
+  margin-left: 0;
+}
+/* line 708, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#checkout-summary h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  border-bottom: 1px solid #d9d9db;
+}
+/* line 714, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#checkout-summary table {
+  width: 100%;
+}
+/* line 725, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#checkout-summary table tr[data-hook="order_total"] {
+  border-bottom: none;
+}
+/* line 729, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#checkout-summary table #summary-order-total {
+  font-size: 14px;
+}
+
+/* line 737, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#billing, #shipping, #shipping_method,
+#payment, #order_details, #order_summary {
+  margin-top: 10px;
+  border: 1px solid #d9d9db;
+  padding: 10px;
+}
+/* line 742, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#billing legend, #shipping legend, #shipping_method legend,
+#payment legend, #order_details legend, #order_summary legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #00adee;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+/* line 755, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#billing input[type="text"], #billing input[type="email"],
+#billing input[type="tel"], #billing input[type="number"],
+#billing select, #billing textarea {
+  width: 100%;
+}
+
+/* line 760, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details, #order_summary {
+  padding: 0;
+}
+/* line 763, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details div:last-child, #order_summary div:last-child {
+  margin-left: -1px;
+}
+/* line 769, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details .payment-info .cc-type img, #order_summary .payment-info .cc-type img {
+  vertical-align: middle;
+}
+/* line 781, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot, #order_summary table tfoot {
+  text-align: right;
+  color: #727276;
+}
+/* line 785, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot tr, #order_summary table tfoot tr {
+  border: none;
+}
+/* line 789, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot#order-total, #order_summary table tfoot#order-total {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #404042;
+}
+/* line 794, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot#order-total tr, #order_summary table tfoot#order-total tr {
+  border-top: 1px solid #d9d9db;
+}
+/* line 797, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot#order-total tr td, #order_summary table tfoot#order-total tr td {
+  padding: 10px;
+}
+/* line 803, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details table tfoot#subtotal, #order_summary table tfoot#subtotal {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #404042;
+}
+/* line 811, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details .steps-data div.columns, #order_summary .steps-data div.columns {
+  padding: 5px;
+  margin: 0;
+}
+/* line 815, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details .steps-data div.columns:first-child, #order_summary .steps-data div.columns:first-child {
+  margin-left: 10px;
+}
+/* line 820, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_details .steps-data h6, #order_summary .steps-data h6 {
+  border-bottom: 1px solid #d9d9db;
+  margin-bottom: 5px;
+}
+
+/* line 829, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method p#minstrs {
+  clear: both;
+}
+/* line 832, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method p#minstrs label {
+  width: 100%;
+}
+/* line 837, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method p label {
+  float: left;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 40px;
+  padding: 5px;
+}
+/* line 846, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .shipment {
+  margin-bottom: 30px;
+}
+/* line 850, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .stock-shipping-method-title {
+  background-color: #f3f3f4;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 11px;
+}
+/* line 858, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .stock-location {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #00adee;
+  color: white;
+}
+/* line 868, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .unshippable .stock-location {
+  background-color: #e45353;
+}
+/* line 873, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .shipping-methods {
+  list-style: none;
+  margin: 0;
+  padding: none;
+}
+/* line 878, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .shipping-methods .shipping-method {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+}
+/* line 882, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .shipping-methods .shipping-method label {
+  font-weight: bold;
+}
+/* line 885, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method .shipping-methods .shipping-method label .rate-cost {
+  color: #00adee;
+}
+/* line 893, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method table.stock-contents thead {
+  background-color: #f3f3f4;
+}
+/* line 896, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method table.stock-contents thead th {
+  font-size: 11px;
+  font-weight: normal;
+}
+/* line 903, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method table.stock-contents tbody tr td {
+  text-align: center;
+}
+/* line 906, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#shipping_method table.stock-contents tbody tr td.item-name {
+  text-align: left;
+}
+
+/* line 915, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+p[data-hook="use_billing"] {
+  float: right;
+  margin-top: -18px;
+  background-color: white;
+  padding: 5px;
+}
+
+/* line 922, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#coupon_status {
+  font-weight: bold;
+  font-size: 125%;
+}
+/* line 925, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#coupon_status.success {
+  color: #8dba53;
+}
+/* line 928, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#coupon_status.error {
+  color: #e45353;
+}
+
+/*--------------------------------------*/
+/* Cart
+/*--------------------------------------*/
+/* line 936, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table#cart-detail {
+  width: 100%;
+  border-collapse: separate;
+}
+/* line 948, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_quantity"] .line_item_quantity {
+  width: 65px;
+}
+/* line 953, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_delete"] .delete {
+  display: block;
+  width: 20px;
+}
+
+/* line 963, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+div[data-hook="inside_cart_form"] .links {
+  margin-top: 15px;
+  text-align: right;
+}
+/* line 968, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+div[data-hook="inside_cart_form"] #subtotal {
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+/* line 979, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#empty-cart {
+  margin-top: -50px;
+  float: left;
+}
+
+/* line 984, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.cart-subtotal, .cart-total {
+  background: #00ADEE;
+}
+/* line 987, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.cart-subtotal td h5, .cart-total td h5 {
+  color: #fff;
+}
+
+/* line 992, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+.adjustment:nth-child(even) {
+  background: #eaeaea;
+}
+
+/*--------------------------------------*/
+/* Account
+/*--------------------------------------*/
+/* line 1001, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#existing-customer h6, #new-customer h6, #forgot-password h6 {
+  text-transform: uppercase;
+}
+
+/* line 1007, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#registration h6 {
+  text-transform: uppercase;
+}
+/* line 1011, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#registration #existing-customer {
+  width: auto;
+  text-align: left;
+}
+
+/* line 1017, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#user-info {
+  margin-bottom: 15px;
+  border: 1px solid #d9d9db;
+  padding: 10px;
+}
+/* line 1022, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#user-info dd {
+  margin-left: 0px;
+}
+
+/*--------------------------------------*/
+/* Order
+/*--------------------------------------*/
+/* line 1030, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order_summary {
+  margin-top: 0;
+}
+
+/* line 1034, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#order p[data-hook="links"] {
+  margin-left: 10px;
+  overflow: auto;
+}
+
+/* line 1043, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table.order-summary tbody tr td {
+  width: 10%;
+  text-align: center;
+}
+/* line 1048, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+table.order-summary tbody tr td:first-child a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00adee;
+}
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1069, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  .container {
+    padding-left: 10px;
+    width: 758px;
+  }
+
+  /* line 1073, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  footer#footer {
+    width: 748px;
+  }
+
+  /* line 1076, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  p[data-hook="use_billing"] {
+    margin-top: -15px;
+  }
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  /* line 1084, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  html {
+    -webkit-text-size-adjust: none;
+  }
+
+  /* line 1089, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #order_details .steps-data div.columns,
+  #order_summary .steps-data div.columns {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 1093, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #order_details .steps-data div.columns:first-child,
+  #order_summary .steps-data div.columns:first-child {
+    margin: 0;
+  }
+
+  /* line 1098, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  nav#taxonomies {
+    text-align: center;
+  }
+  /* line 1101, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  nav#taxonomies ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  /* line 1107, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  ul#nav-bar {
+    text-align: center;
+  }
+
+  /* line 1111, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  .steps-data div.columns {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  /* line 1117, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #order_details table[data-hook="order_details"], #order table[data-hook="order_details"] {
+    width: 100%;
+  }
+
+  /* line 1123, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #update-cart #subtotal, #update-cart .links {
+    width: 50%;
+    float: left;
+    text-align: left;
+  }
+  /* line 1128, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #update-cart #subtotal {
+    text-align: right;
+  }
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 1137, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  footer#footer {
+    width: auto;
+  }
+
+  /* line 1141, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  input, select {
+    vertical-align: baseline;
+  }
+
+  /* line 1145, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  figure#logo {
+    text-align: center;
+  }
+
+  /* line 1149, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #link-to-login {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 1154, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #search-bar {
+    display: block;
+    text-align: center;
+  }
+  /* line 1158, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #search-bar select {
+    margin-bottom: 10px;
+  }
+
+  /* line 1163, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  ul#products {
+    margin-left: 0;
+    margin-right: -20px;
+  }
+  /* line 1167, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  ul#products li {
+    width: 133px;
+    margin-right: 10px;
+  }
+
+  /* line 1176, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_description"], table#cart-detail tbody tr td[data-hook="order_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] {
+    font-size: 11px;
+    line-height: 15px;
+    width: 100px;
+  }
+  /* line 1181, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_description"] h4, table#cart-detail tbody tr td[data-hook="order_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] h4 {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+  /* line 1188, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_price"], table#cart-detail tbody tr td[data-hook="cart_item_total"],
+  table#cart-detail tbody tr td[data-hook="order_item_price"], table#cart-detail tbody tr td[data-hook="order_item_total"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_total"],
+  table[data-hook="order_details"] tbody tr td[data-hook="order_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_total"] {
+    font-size: 12px;
+  }
+  /* line 1192, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_image"] img, table#cart-detail tbody tr td[data-hook="order_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="order_item_image"] img {
+    width: 70px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 1203, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #empty-cart {
+    clear: both;
+    margin-top: 0;
+    float: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 1211, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  .container .offset-by-nine.coupon-code-field {
+    padding-left: 380px;
+  }
+}
+/* line 1216, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+#update-cart .coupon-code-field {
+  /* yes, this is ugly... */
+  margin-top: -42px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 1223, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #empty-cart,
+  #update-cart .coupon-code-field {
+    /* yes, this is ugly... */
+    margin-top: 0 !important;
+  }
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  /* line 1232, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  .progress-steps li {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  /* line 1237, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  .progress-steps li span {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  /* line 1243, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #shipping_method p label {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* line 1250, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  p[data-hook="use_billing"] {
+    float: none;
+    margin-top: 0;
+  }
+
+  /* line 1258, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_description"], table#cart-detail tbody tr td[data-hook="order_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"], table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] {
+    padding: 0 !important;
+    text-indent: -9999px;
+  }
+  /* line 1262, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_description"] h4, table#cart-detail tbody tr td[data-hook="order_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_description"] h4, table[data-hook="order_details"] tbody tr td[data-hook="order_item_description"] h4 {
+    display: none;
+  }
+  /* line 1267, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_image"] img, table#cart-detail tbody tr td[data-hook="order_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="cart_item_image"] img, table[data-hook="order_details"] tbody tr td[data-hook="order_item_image"] img {
+    width: 70px;
+  }
+  /* line 1271, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table#cart-detail tbody tr td[data-hook="cart_item_price"], table#cart-detail tbody tr td[data-hook="cart_item_total"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_price"], table[data-hook="order_details"] tbody tr td[data-hook="cart_item_total"] {
+    font-size: 14px !important;
+  }
+
+  /* line 1278, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  /* line 1281, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary thead {
+    display: block;
+    float: left;
+  }
+  /* line 1282, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  /* line 1283, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary thead tr {
+    display: block;
+  }
+  /* line 1284, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary th {
+    display: block;
+  }
+  /* line 1285, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  /* line 1286, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  table.order-summary td {
+    display: block;
+    min-height: 1.25em;
+  }
+
+  /* line 1289, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  figure#logo {
+    text-align: center;
+  }
+
+  /* line 1293, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #link-to-login {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 1298, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #search-bar {
+    display: block;
+    text-align: center;
+  }
+  /* line 1302, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #search-bar select {
+    margin-bottom: 10px;
+  }
+
+  /* line 1307, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  aside#sidebar {
+    text-align: center;
+  }
+  /* line 1310, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  aside#sidebar ul {
+    padding-left: 0;
+  }
+  /* line 1313, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  aside#sidebar ul li {
+    list-style-type: none;
+  }
+
+  /* line 1320, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  ul#products li {
+    width: 142px;
+    margin-right: 15px;
+  }
+  /* line 1324, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  ul#products li.secondary, ul#products li.omega {
+    margin-right: 0;
+  }
+
+  /* line 1330, /Users/chaoyee/projects/spree/extensions/spree/frontend/app/assets/stylesheets/spree/frontend/screen.css.scss */
+  #content {
+    text-align: center;
+  }
+}
+/*
+* This is a manifest file that includes stylesheets for spree_frontend 
+
+
+
+*/
+
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+
+
+
+
+
+
+
+
+ *  require store/spree_lookbook
+*/
+
+/*
+
+*/
+
+/*!
+ * jQuery UI CSS Framework 1.10.3
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ */
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*!
+ * jQuery UI CSS Framework 1.10.3
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Theming/API
+ *
+ * To view and modify this theme, visit http://jqueryui.com/themeroller/
+ */
+/*
+
+ */
+
+
+/* Component containers
+----------------------------------*/
+
+.ui-widget {
+	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
+	font-size: 1.1em/*{fsDefault}*/;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif/*{ffDefault}*/;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #aaaaaa/*{borderColorContent}*/;
+	background: #ffffff/*{bgColorContent}*/ url(/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100.png)/*{bgImgUrlContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/;
+	color: #222222/*{fcContent}*/;
+}
+.ui-widget-content a {
+	color: #222222/*{fcContent}*/;
+}
+.ui-widget-header {
+	border: 1px solid #aaaaaa/*{borderColorHeader}*/;
+	background: #cccccc/*{bgColorHeader}*/ url(/assets/jquery-ui/ui-bg_highlight-soft_75_cccccc_1x100.png)/*{bgImgUrlHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/;
+	color: #222222/*{fcHeader}*/;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #222222/*{fcHeader}*/;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3/*{borderColorDefault}*/;
+	background: #e6e6e6/*{bgColorDefault}*/ url(/assets/jquery-ui/ui-bg_glass_75_e6e6e6_1x400.png)/*{bgImgUrlDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #555555/*{fcDefault}*/;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #555555/*{fcDefault}*/;
+	text-decoration: none;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #999999/*{borderColorHover}*/;
+	background: #dadada/*{bgColorHover}*/ url(/assets/jquery-ui/ui-bg_glass_75_dadada_1x400.png)/*{bgImgUrlHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #212121/*{fcHover}*/;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited {
+	color: #212121/*{fcHover}*/;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #aaaaaa/*{borderColorActive}*/;
+	background: #ffffff/*{bgColorActive}*/ url(/assets/jquery-ui/ui-bg_glass_65_ffffff_1x400.png)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/;
+	font-weight: normal/*{fwDefault}*/;
+	color: #212121/*{fcActive}*/;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #212121/*{fcActive}*/;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fcefa1/*{borderColorHighlight}*/;
+	background: #fbf9ee/*{bgColorHighlight}*/ url(/assets/jquery-ui/ui-bg_glass_55_fbf9ee_1x400.png)/*{bgImgUrlHighlight}*/ 50%/*{bgHighlightXPos}*/ 50%/*{bgHighlightYPos}*/ repeat-x/*{bgHighlightRepeat}*/;
+	color: #363636/*{fcHighlight}*/;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+	color: #363636/*{fcHighlight}*/;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a/*{borderColorError}*/;
+	background: #fef1ec/*{bgColorError}*/ url(/assets/jquery-ui/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/ 50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/;
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #cd0a0a/*{fcError}*/;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_222222_256x240.png)/*{iconsContent}*/;
+}
+.ui-widget-header .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_222222_256x240.png)/*{iconsHeader}*/;
+}
+.ui-state-default .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_888888_256x240.png)/*{iconsDefault}*/;
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_454545_256x240.png)/*{iconsHover}*/;
+}
+.ui-state-active .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_454545_256x240.png)/*{iconsActive}*/;
+}
+.ui-state-highlight .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_2e83ff_256x240.png)/*{iconsHighlight}*/;
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	background-image: url(/assets/jquery-ui/ui-icons_cd0a0a_256x240.png)/*{iconsError}*/;
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px/*{cornerRadius}*/;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px/*{cornerRadius}*/;
+}
+
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa/*{bgColorOverlay}*/ url(/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png)/*{bgImgUrlOverlay}*/ 50%/*{bgOverlayXPos}*/ 50%/*{bgOverlayYPos}*/ repeat-x/*{bgOverlayRepeat}*/;
+	opacity: .3/*{opacityOverlay}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/;
+}
+.ui-widget-shadow {
+	margin: -8px/*{offsetTopShadow}*/ 0 0 -8px/*{offsetLeftShadow}*/;
+	padding: 8px/*{thicknessShadow}*/;
+	background: #aaaaaa/*{bgColorShadow}*/ url(/assets/jquery-ui/ui-bg_flat_0_aaaaaa_40x100.png)/*{bgImgUrlShadow}*/ 50%/*{bgShadowXPos}*/ 50%/*{bgShadowYPos}*/ repeat-x/*{bgShadowRepeat}*/;
+	opacity: .3/*{opacityShadow}*/;
+	filter: Alpha(Opacity=30)/*{opacityFilterShadow}*/;
+	border-radius: 8px/*{cornerRadiusShadow}*/;
+}
+/*!
+ * jQuery UI Datepicker 1.10.3
+ * http://jqueryui.com
+ *
+ * Copyright 2013 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Datepicker#theming
+ */
+/*
+
+
+ */
+
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+/*
+
+*/
+
+
+.bt_payment_form { margin-left: -10px; }
+.bt_payment_form table { border-collapse: inherit; }
+.bt_payment_form [type="submit"] { margin-left: 10px; }
+.bt_payment_form input[type="text"], .bt_payment_form input[type="date"] { width: 138px; }
+.hidden { display: none; }
+
+/* line 2, /Users/chaoyee/projects/spree/extensions/spree_address_book/app/assets/stylesheets/store/spree_address_book.scss */
+div.inner input[type=text], div.inner select {
+  width: 80%;
+}
+
+/* line 7, /Users/chaoyee/projects/spree/extensions/spree_address_book/app/assets/stylesheets/store/spree_address_book.scss */
+div#checkout #checkout_form_address #billing .select_address label, div#checkout #checkout_form_address #shipping .select_address label {
+  float: none;
+}
+/* line 8, /Users/chaoyee/projects/spree/extensions/spree_address_book/app/assets/stylesheets/store/spree_address_book.scss */
+div#checkout #checkout_form_address #billing input[type=radio], div#checkout #checkout_form_address #shipping input[type=radio] {
+  width: auto;
+}
+
+/* line 12, /Users/chaoyee/projects/spree/extensions/spree_address_book/app/assets/stylesheets/store/spree_address_book.scss */
+.hidden {
+  display: none;
+}
+/*
+
+*/
+
+/* Sidebar */
+
+nav#pages .pages-root {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(217, 217, 219);
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+/*
+Placeholder manifest file.
+the installer will append this file to the app vendored assets here: 'vendor/assets/stylesheets/spree/frontend/all.css'
+*/
+

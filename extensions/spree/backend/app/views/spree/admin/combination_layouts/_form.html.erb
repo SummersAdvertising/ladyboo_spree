@@ -1,0 +1,93 @@
+<%= form_for [:admin, @combination_layout],:html => { :multipart => true }  do |f| %>
+  <% if @combination_layout.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <h2><%= pluralize(@combination_layout.errors.count, "error") %> prohibited this data from being saved:</h2>
+
+      <ul>
+      <% @combination_layout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="panel panel-default">
+    <h4><%= Spree.t("combinationlayout.id") + ': ' +@combination_layout.id.to_s %></h4>
+
+    <%# no show in id:18  %>
+    <% if @combination_layout.id != 18 %> 
+      <%= f.field_container :image do %>
+        <legend align="center"><%= Spree.t(:image) %>:</legend>    
+        <div>
+          <% if @combination_layout.image.present? %>
+            <%= image_tag(@combination_layout.image.url(:normal)) %>
+            <%= @combination_layout.image_file_name %><br /><br />
+          <% else %>
+            <%= Spree.t(:no_icon) %>
+          <% end %>
+        </div>
+        <div>
+          <%= f.file_field :image %>
+        </div>  
+      <% end %>
+    <% end %>  
+    
+    <%# only show in id:1 ~ 17 %> 
+    <% if [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17].include?(@combination_layout.id) %>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th><%= f.label :taxon_id, Spree.t("combinationlayout.taxon") %>:<%= "#{get_taxon_name  (@combination_layout.taxon_id)}" %></th>
+            <td><%= f.text_field :taxon_id, id: 'taxon_id', class: "columns six" %></td>
+          </tr>
+        </tbody>    
+      </table>   
+    <% end %>
+
+    <%# only show in id:8 ~ 17 %> 
+    <% if [8,9,10,11,12,13,14,15,16,17].include?(@combination_layout.id) %> 
+      <table class="table">
+        <tbody>
+          <tr>
+            <th><%= f.label :text_1, Spree.t("combinationlayout.text_1") %></th>
+            <td><%= f.text_field :text_1 %></td>
+          </tr>
+           <tr>
+            <th><%= f.label :text_2, Spree.t("combinationlayout.text_2") %></th>
+            <td><%= f.text_field :text_2 %></td>
+          </tr>
+           <tr>
+            <th><%= f.label :text_3, Spree.t("combinationlayout.text_3") %></th>
+            <td><%= f.text_field :text_3 %></td>
+          </tr>
+           <tr>
+            <th><%= f.label :text_4, Spree.t("combinationlayout.text_4") %></th>
+            <td><%= f.text_field :text_4 %></td>
+          </tr>
+           <tr>
+            <th><%= f.label :text_5, Spree.t("combinationlayout.text_5") %></th>
+            <td><%= f.text_field :text_5 %></td>
+          </tr>
+        </tbody>    
+      </table>   
+    <% end %>
+
+    <%# only show in id:18 %>
+    <% if @combination_layout.id == 18  %> 
+      <table class="table">
+        <tbody>      
+          <tr>
+            <th><%= f.label :text_1, Spree.t('combinationlayout.combination_layout_setting') %></th>
+            <td><%#= f.text_field :taxon_id, id: 'taxon_id', class: "columns six" %></td>
+            <td><%= f.select :text_1, options_for_select([
+                ['1', '1'], ['2', '2'], ['3', '3'], ['4', '4']], 
+                f.object.text_1 || default_value )%></td>
+          </tr>
+        </tbody>    
+      </table> 
+    <% end %>   
+  </div>
+  <div class="actions align-center">
+    <%= f.submit Spree.t("combinationlayout.submit") %>  
+  </div>   
+<% end %>

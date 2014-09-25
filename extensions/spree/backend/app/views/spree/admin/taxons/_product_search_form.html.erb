@@ -1,0 +1,16 @@
+<% product ||= Spree::Product.new %>
+
+<%= form_for product, :html => { :multipart => true } do |f| %>
+
+  <fieldset data-hook="new_product">
+    <legend align="center"><%= Spree.t('new_product') %></legend>
+      <%= f.label :id, Spree.t('product_name') %>
+      <%= f.text_field :id, :class => 'product_picker fullwidth' %>
+      <%= f.error_message_on :id %>
+    <div class="form-buttons filter-actions actions" data-hook="buttons">
+      <%= button Spree.t(:add_and_refresh), 'plus', edit_admin_taxonomy_taxon_path(@taxonomy.id, @taxon.id) %>
+      <span class="or"><%= t(:or) %></span>
+      <%= link_to_with_icon 'icon-remove', t(:cancel), edit_admin_taxonomy_taxon_path(@taxonomy.id, @taxon.id), :id => 'cancel_link', :class => 'button' %>
+    </div>
+  </fieldset>
+<% end %>

@@ -1,0 +1,144 @@
+<fieldset id='shipping_method' data-hook>
+  <legend align="center"><%= Spree.t(:delivery) %></legend>
+  <div class="inner" data-hook="shipping_method_inner">
+    <div id="methods">
+      <%= form.fields_for :shipments do |ship_form| %>
+
+        <div class="shipment">
+          <h3 class="stock-location" data-hook="stock-location">
+            <%= Spree.t(:package_from) %>
+            <strong class="stock-location-name" data-hook="stock-location-name"><%= ship_form.object.stock_location.name %></strong>
+          </h3>
+
+          <table class="stock-contents" data-hook="stock-contents">
+            <colgroup>
+              <col style="width: 10%;" />
+              <col style="width: 60%;" />
+              <col style="width: 10%;" />
+              <col style="width: 20%;" />
+            </colgroup>
+            <thead>
+              <th></th>
+              <th align='left'><%= Spree.t(:item) %></th>
+              <th><%= Spree.t(:qty) %></th>
+              <th><%= Spree.t(:price) %></th>
+            </thead>
+            <tbody>
+              <% ship_form.object.manifest.each do |item| %>
+                <tr class="stock-item">
+                  <td class="item-image"><%= mini_image(item.variant) %></td>
+                  <td class="item-name"><%= item.variant.name %></td>
+                  <td class="item-qty"><%= item.quantity %></td>
+                  <td class="item-price"><%= display_price(item.variant) %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+
+          <h5 class="stock-shipping-method-title"><%= Spree.t(:shipping_method) %></h5>
+          <ul class="field radios shipping-methods">
+            <% ship_form.object.shipping_rates.each do |rate| %>
+              <li class="shipping-method">
+                <label>
+                  <%= ship_form.radio_button :selected_shipping_rate_id, rate.id %>
+                  <span class="rate-name"><%= rate.name %></span>
+                  <span class="rate-cost"><%= rate.display_cost %></span>
+                </label>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+
+      <% end %>
+
+      <% if @differentiator.try(:missing?) %>
+        <div class="shipment unshippable">
+          <h3 class="stock-location" data-hook="stock-location">
+            <%= Spree.t(:unshippable_items) %>
+          </h3>
+          <table class="stock-contents" data-hook="stock-missing">
+            <colgroup>
+              <col style="width: 10%;" />
+              <col style="width: 60%;" />
+              <col style="width: 10%;" />
+              <col style="width: 20%;" />
+            </colgroup>
+            <thead>
+              <th></th>
+              <th align='left'><%= Spree.t(:item) %></th>
+              <th><%= Spree.t(:qty) %></th>
+              <th><%= Spree.t(:price) %></th>
+            </thead>
+            <tbody>
+              <% @differentiator.missing.each do |variant, quantity| %>
+                <tr class="stock-item">
+                  <td class="item-image"><%= mini_image(variant) %></td>
+                  <td class="item-name"><%= variant.name %></td>
+                  <td class="item-qty"><%= quantity %></td>
+                  <td class="item-price"><%= display_price(variant) %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      <% end %>
+
+    </div>
+    <% if Spree::Config[:shipping_instructions] %>
+      <p id="minstrs" data-hook>
+        <%= form.label :special_instructions, Spree.t(:shipping_instructions) %><br />
+        <%= form.text_area :special_instructions, :cols => 40, :rows => 7 %>
+      </p>
+    <% end %>
+
+    <!-- Add below -->
+    <div class="field">
+      <% dt = [ Spree.t(:all_time), Spree.t(:afternoon), Spree.t(:night)] %>
+      <%= label_tag nil, Spree.t("invoice.delivery_time") %>
+      <ul>
+        <%# Preventing the nil to string error. %>
+        <% dt_string = @order.delivery_time.present? ? @order.delivery_time : " " %>
+        
+        <% (0..2).each do |n| %>
+          <%= form.radio_button :delivery_time, dt[n], 
+              checked: dt[n].include?(dt_string), :id => "delivery_time_#{n}" %>
+          <%= label_tag dt[n] %>
+        <% end %>
+      </ul>
+    </div>
+    <!-- Add above -->
+
+  </div>
+</fieldset>
+<!-- Add below -->
+        
+<fieldset id="invoice" data-hook>
+  <legend align="center"><%= Spree.t("invoice.invoice") %></legend>
+  <p>  
+    <%= form.label :invoice_type, Spree.t("invoice.invoice_type") %>
+    <%= form.select :invoice_type, options_for_select([
+                ["#{Spree.t(:type_2_invoice)}", "#{Spree.t(:type_2_invoice)}"],
+                ["#{Spree.t(:type_3_invoice)}", "#{Spree.t(:type_3_invoice)}"]], 
+                selected: @order.invoice_type ) %>
+  </p>
+  <p>
+    <%= form.label :company_tax_id, Spree.t("invoice.company_tax_id") %>
+    <%= form.text_field :company_tax_id %>
+  </p>
+  <p>
+    <%= form.label :invoice_title, Spree.t("invoice.invoice_title") %>
+    <%= form.text_field :invoice_title %>
+  </p>
+  <p>
+    <%= form.label :invoice_address, Spree.t("invoice.invoice_address") %>
+    <%= form.text_field :invoice_address, size: 50 %>
+  </p>  
+</fieldset>
+
+<!-- Add above -->
+<br />
+<br />
+
+<div class="form-buttons" data-hook="buttons">
+  <%= submit_tag Spree.t(:save_and_continue), :class => 'continue button primary' %>
+</div>

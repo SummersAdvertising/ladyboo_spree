@@ -1,0 +1,50 @@
+<%#= render 'spree/admin/shared/configuration_menu' %>
+<%#= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<% content_for :page_title do %>
+  <%= Spree.t("claim_title") %>
+<% end %>
+
+<% if @claims.any? %>
+  <table class="index">
+    <colgroup>
+      <col style="width: 10%"  />
+      <col style="width: 3%"  />
+      <col style="width: 6%"  />
+      <col style="width: 8%" />
+      <col style="width: 20%"  />
+      <col style="width: 5%" />
+      <col style="width: 1%" />   
+    </colgroup>
+    <thead>
+      <tr>
+        <th><%= Spree.t(:date)%></th>
+        <th><%= Spree.t(:name) %></th>
+        <th><%= Spree.t(:email)  %></th>
+        <th><%= Spree.t(:order_number) %></th>
+        <th><%= Spree.t(:message) %></th>
+        <th><%= Spree.t(:status) %></th>
+        <th class="actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @claims.each do |claim| %> 
+      <tr class="<%= cycle('odd', 'even')%>">
+          <td class="align-center"><%= l(claim.created_at, format: :blog_date) if claim.created_at %></td>
+          <td class="align-center"><%= claim.name %></td>
+          <td class="align-center"><%= claim.email %></td>
+          <td class="align-center"><%= claim.order_number %></td>
+          <td class="align-center"><%= claim.message %></td>
+          <td class="align-center"><%= status_to_word(claim.status) %></td>
+          <td class="actions">
+            <%= link_to_edit claim, :no_text => true, :url => edit_admin_claim_path(claim.id) %>
+          </td>
+        </tr>
+      <% end %>
+      <tr>
+    </tbody>
+  </table>
+  <%= paginate @claims %>
+<% else %>
+  <p><%= Spree.t(:no_claims) %></p>  
+<% end %>  

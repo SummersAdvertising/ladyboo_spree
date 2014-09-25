@@ -1,0 +1,67 @@
+<%= form_for [:admin, @claim],:html => { :multipart => true }  do |f| %>
+  <% if @claim.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <h2><%= pluralize(@claim.errors.count, "error") %> prohibited this data from being saved:</h2>
+
+      <ul>
+      <% @claim.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="panel panel-default">
+    <h4><%= Spree.t(:claim_title) + ': ' + @claim.id.to_s %></h4>
+    <table class="table">
+      <colgroup>
+        <col style="width: 8%"  />
+        <col style="width: 40%"  />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th><%= f.label :created_at, Spree.t("created_at") %></th>
+          <td><%= "#{l(@claim.created_at, format: :blog_date)}" %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :name, Spree.t(:name) %></th>
+          <td><%= @claim.name %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :email, Spree.t(:email) %></th>
+          <td><%= @claim.email %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :subject, Spree.t(:subject) %></th>
+          <td><%= @claim.subject %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :order_number, Spree.t(:order_number) %></th>
+          <td><%= @claim.order_number %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :message, Spree.t(:message) %></th>
+          <td><%= @claim.message.html_safe %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :note, Spree.t(:note) %></th>
+          <td><%= f.text_area :note, { cols: 20, rows: 6, class: 'fullwidth', id: 'claim_note' } %></td>
+        </tr>
+        <tr>
+          <th><%= f.label :status, Spree.t(:status) %></th>
+          <td><%= f.select :status, options_for_select([
+                ["#{Spree.t(:open)}",   '1'],
+                ["#{Spree.t(:closed)}", '2']], 
+                selected: @claim.status )%></td>
+        </tr>
+        <tr>
+          <th><%= f.label :closed_at, Spree.t(:closed_at) %></th>
+          <td><%= f.date_field :closed_at %></td>
+        </tr>
+      </tbody>    
+    </table>  
+  </div>
+  <div class="actions align-center">
+    <%= f.submit Spree.t("combinationlayout.submit") %>  
+  </div>   
+<% end %>

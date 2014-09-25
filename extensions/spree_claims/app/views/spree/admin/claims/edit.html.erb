@@ -1,0 +1,13 @@
+<% content_for :page_title do %>
+  <%= Spree.t(:claim_title) %>
+<% end %>
+
+<% content_for :page_actions do %>
+  <ul class="actions inline-menu">
+    <li>
+      <%= button_link_to Spree.t(:back), admin_claims_url, { :icon => 'arrow-left', :id => 'admin_claims_url' } %>
+    </li>
+  </ul>
+<% end %>
+
+<%= render :partial => 'form' %>

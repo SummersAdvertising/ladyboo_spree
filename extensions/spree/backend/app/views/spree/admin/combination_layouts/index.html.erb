@@ -1,0 +1,299 @@
+<%# This page contains the layout information for generating %>
+<%# the frontpage layout. They are:                          %>
+<%#                                                          %>
+<%# Slider: id: 1                                            %>
+<%#         id: 2                                            %>
+<%#         id: 3                                            %>
+<%#                                                          %>
+<%# Series: id: 4                                            %>
+<%#         id: 5                                            %>
+<%#         id: 6                                            %>
+<%#         id: 7                                            %>
+<%#                                                          %>
+<%# Combination:                                             %>
+<%#    layout 1:                                             %>
+<%#         id: 8                                            %>
+<%#    layout 2:                                             %>
+<%#         id: 9                                            %>
+<%#         id: 10                                           %>
+<%#    layout 3:                                             %>
+<%#         id: 11                                           %>
+<%#         id: 12                                           %>
+<%#         id: 13                                           %>
+<%#    layout 4:                                             %>
+<%#         id: 14                                           %>
+<%#         id: 15                                           %>
+<%#         id: 16                                           %>
+<%#         id: 17                                           %>
+<%#    layput_selection:                                     %>
+<%#         id: 18, text_1                                   %>
+<%# -------------------------------------------------------- %>
+
+<%#= render 'spree/admin/shared/configuration_menu' %>
+<%#= render :partial => 'spree/admin/shared/product_sub_menu' %>
+
+<% content_for :page_title do %>
+  <%= Spree.t("combinationlayout.frontpage_management") %>
+<% end %>
+
+
+<h5><%= Spree.t("combinationlayout.slider") %></h5>
+<table class="index">
+  <colgroup>
+    <col style="width: 1%"  />
+    <col style="width: 3%"  />
+    <col style="width: 8%"  />
+    <col style="width: 20%" />
+    <col style="width: 1%"  />
+  </colgroup>
+  <thead>
+    <tr>
+      <th><%= Spree.t(:id)%></th>
+      <th><%= Spree.t(:image) %></th>
+      <th><%= Spree.t(:name)  %></th>
+      <th><%= Spree.t("combinationlayout.text")  %></th>
+      <th class="actions"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="align-center"><%= @combination_layout_1.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_1.image.present? ? image_tag(@combination_layout_1.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_1.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_1.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_1, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_1.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_2.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_2.image.present? ? image_tag(@combination_layout_2.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_2.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_2.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_2, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_2.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_3.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_3.image.present? ? image_tag(@combination_layout_3.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_3.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_3.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_3, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_3.id) %>
+      </td>  
+    </tr>
+  </tbody>
+</table>
+
+
+<h5><%= Spree.t("combinationlayout.series_layout") %></h5>
+<table class="index">
+  <colgroup>
+    <col style="width: 1%"  />
+    <col style="width: 3%"  />
+    <col style="width: 8%"  />
+    <col style="width: 20%" />
+    <col style="width: 1%"  />
+  </colgroup>
+  <thead>
+    <tr>
+      <th><%= Spree.t(:id)%></th>
+      <th><%= Spree.t(:image) %></th>
+      <th><%= Spree.t(:name)  %></th>
+      <th><%= Spree.t("combinationlayout.text")  %></th>
+      <th class="actions"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="align-center"><%= @combination_layout_4.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_4.image.present? ? image_tag(@combination_layout_4.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_4.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_4.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_4, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_4.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_5.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_5.image.present? ? image_tag(@combination_layout_5.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_5.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_5.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_5, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_5.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_6.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_6.image.present? ? image_tag(@combination_layout_6.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_6.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_6.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_6, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_6.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_7.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_7.image.present? ? image_tag(@combination_layout_7.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_7.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_7.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_7, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_7.id) %>
+      </td>  
+    </tr>  
+  </tbody>
+</table>
+
+<h5><%= Spree.t("combinationlayout.combination_layout") %></h5>
+<table class="index">
+  <colgroup>
+    <col style="width: 1%"  />
+    <col style="width: 3%"  />
+    <col style="width: 8%"  />
+    <col style="width: 20%" />
+    <col style="width: 1%"  />
+  </colgroup>
+  <thead>
+    <tr>
+      <th><%= Spree.t(:id)%></th>
+      <th><%= Spree.t(:image) %></th>
+      <th><%= Spree.t(:name)  %></th>
+      <th><%= Spree.t("combinationlayout.text")  %></th>
+      <th class="actions"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%# @combination_layouts.each do |combination_layout| %> 
+    <!-- <tr class="<%#= cycle('odd', 'even')%>">
+        <td class="align-center"><%#= combination_layout.id.to_s %></td>
+        <td class="align-center"><%#= combination_layout.image.present? ? image_tag(combination_layout.image.url(:mini)) : Spree.t(:no_icon) %></td>
+        <td class="align-center"><%#= get_taxon_name(combination_layout.taxon_id) %></td>
+        <td class="align-center"><%#= combination_layout.text_1 %></td>
+        <td class="actions">
+          <%#= link_to_edit combination_layout, :no_text => true, :url => edit_admin_combination_layout_path(combination_layout.id) %>
+        </td>
+      </tr> -->
+    <%# end %>
+    <tr>
+      <td colspan=4 ><%= Spree.t("combinationlayout.layout_1") %></td>
+    </tr>  
+    <tr>
+      <td class="align-center"><%= @combination_layout_8.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_8.image.present? ? image_tag(@combination_layout_8.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_8.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_8.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_8, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_8.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td colspan=4 ><%= Spree.t("combinationlayout.layout_2") %></td>
+    </tr>  
+    <tr>
+      <td class="align-center"><%= @combination_layout_9.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_9.image.present? ? image_tag(@combination_layout_9.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_9.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_9.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_9, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_9.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_10.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_10.image.present? ? image_tag(@combination_layout_10.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_10.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_10.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_10, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_10.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td colspan=4 ><%= Spree.t("combinationlayout.layout_3") %></td>
+    </tr>  
+    <tr>
+      <td class="align-center"><%= @combination_layout_11.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_11.image.present? ? image_tag(@combination_layout_11.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_11.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_11.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_11, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_11.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_12.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_12.image.present? ? image_tag(@combination_layout_12.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_12.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_12.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_12, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_12.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_13.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_13.image.present? ? image_tag(@combination_layout_13.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_13.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_13.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_13, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_13.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td colspan=4 ><%= Spree.t("combinationlayout.layout_4") %></td>
+    </tr>  
+    <tr>
+      <td class="align-center"><%= @combination_layout_14.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_14.image.present? ? image_tag(@combination_layout_14.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_14.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_14.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_14, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_14.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_15.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_15.image.present? ? image_tag(@combination_layout_15.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_15.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_15.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_15, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_15.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_16.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_16.image.present? ? image_tag(@combination_layout_16.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_16.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_16.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_16, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_16.id) %>
+      </td>  
+    </tr>
+    <tr>
+      <td class="align-center"><%= @combination_layout_17.id.to_s %></td>
+      <td class="align-center"><%= @combination_layout_17.image.present? ? image_tag(@combination_layout_17.image.url(:mini)) : Spree.t(:no_icon) %></td>
+      <td class="align-center"><%= get_taxon_name(@combination_layout_17.taxon_id) %></td>
+      <td class="align-center"><%= @combination_layout_17.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_17, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_17.id) %>
+      </td>  
+    </tr>
+  </tbody>
+</table>
+
+<h5><%= Spree.t("combinationlayout.combination_layout_setting") %></h5>
+<table class="index">
+  <colgroup>
+    <col style="width: 3%"  />
+    <col style="width: 10%" />
+    <col style="width: 3%"  />
+  </colgroup>
+  <tbody>
+    <tr>
+      <td class="align-center"><%= Spree.t("combinationlayout.layout") %></td>
+      <td class="align-center"><%= @combination_layout_18.text_1 %></td>
+      <td class="actions">
+        <%= link_to_edit @combination_layout_18, :no_text => true, :url =>edit_admin_combination_layout_path(@combination_layout_18.id) %>
+      </td>  
+    </tr>  
+  </tbody>  
+</table>

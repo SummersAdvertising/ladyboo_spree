@@ -1,0 +1,20 @@
+zh-TW:
+  spree:
+    claim_title: 聯絡客服
+    claim: 聯絡客服
+    submit: 送出
+    cancel: 取消
+    claim_was_successfully_sent: 聯絡客服訊息已成功送出！
+    claim_was_successfully_updated: 聯絡客服訊息已更新！
+    sender: 寄信者
+    email: 電子信箱帳號
+    subject: 主題
+    message: 訊息
+    note: 客服備註
+    closed_at: 結案於
+    open: 處理中
+    closed: 已處理
+    admin:
+      tab:
+        claims: 客服處理 
+

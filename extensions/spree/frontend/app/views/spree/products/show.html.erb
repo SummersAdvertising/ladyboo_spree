@@ -1,0 +1,99 @@
+<% cache [I18n.locale, current_currency, @product] do %>
+  <div data-hook="product_show" itemscope itemtype="http://schema.org/Product">
+    <% @body_id = 'product-details' %>
+
+    <div class="columns six alpha" data-hook="product_left_part">
+      <div class="row" data-hook="product_left_part_wrap">
+
+        <div id="product-images" data-hook="product_images">
+          <div id="main-image" data-hook>
+            <%= render :partial => 'image' %>
+          </div>
+          <div id="thumbnails" data-hook>
+            <%= render :partial => 'thumbnails' %>
+          </div>
+        </div>
+
+        <div data-hook="product_properties">
+          <%#= render :partial => 'properties' %>
+        </div>
+
+        <div data-hook="promotions">
+          <%= render :partial => 'promotions' %>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="columns ten omega" data-hook="product_right_part">
+      <div class="row" data-hook="product_right_part_wrap">
+
+        <div id="product-description" data-hook="product_description">
+
+          <h1 itemprop="name"><%= accurate_title %></h1>
+          <h1 class='product-title'>
+            <%= product_name_in_en(@product.id) %> 
+          </h1>
+          <div><%= @product.sku %></div>
+          <div itemprop="description" data-hook="description">
+            <%= product_description(@product) rescue Spree.t(:product_has_no_description) %>
+          </div>
+          <div>
+            <%= link_to fb_share('APP_ID', 'REQUEST_URI', {
+              :name => "#{@product.name}",
+              :description => "#{product_description(@product)}",
+              :link => "#{@product_url}"  }) %>
+          </div>
+          <br/>
+          <div>
+            <%= Spree.t(:material)%>
+            <%= simple_format(@product.material, {}, wrapper_tag: "div") %>
+          </div>
+          <div>
+            <%= Spree.t(:remarks)%>
+            <%= simple_format(@product.remarks, {}, wrapper_tag: "div") %>
+          </div>
+          <div>
+            <%= Spree.t(:model)%>
+            <%= simple_format(@product.model, {}, wrapper_tag: "div") %>
+          </div>  
+          <div id="cart-form" data-hook="cart_form">
+            <%= render :partial => 'cart_form' %>
+          </div>
+        </div>
+
+        <%#= render :partial => 'taxons' %>
+
+      </div>
+    </div>
+    <div>
+      <table class="twelve columns alpha omega" id="listing_product_size">
+        <thead>
+          <tr>
+            <th><%= Spree.t(:product_size_table) %></th>
+            <th colspan="1"><%= Spree.t(:xs) %></th>
+            <th colspan="1"><%= Spree.t(:s)  %></th>
+            <th colspan="1"><%= Spree.t(:m)  %></th>
+            <th colspan="1"><%= Spree.t(:l)  %></th>
+            <th colspan="1"><%= Spree.t(:xl)  %></th>
+            <th colspan="1"><%= Spree.t(:f)  %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%# The original code is in _product_size_table.html.erb %>
+          <% title = ["bust", "waist", "arm_circumference", "hip", "thigh", "clothes_length", "skirt_length", "pants_length", "sleeve_length", "straps_length", "shoulder_length", "sleeve_width", "collar_width", "back_rise", "front_rise"]%>
+          <% (1..15).each do |n| %>
+            <tr>
+              <% if product_size_table_data_present_in_row(@product, n) %>
+                <td class="align-center"><%= Spree.t(title[n - 1].to_sym) %></td>           
+                <% ['xs','s','m','l','xl','f'].each do |size| %>
+                  <td class="align-center"><%= @product.send(:"#{size}_#{n}") %></td>
+                <% end %>
+              <% end %>  
+            </tr>  
+          <% end %>  
+        </tbody>
+      </table>
+    </div>  
+  </div>
+<% end %>
