@@ -1,0 +1,13 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  spree:
+    payment_not_found: "Payment not found"
+    payment_successfully_updated: "Payment successfully updated"
+    payment_reference_details: "Payment Reference Details"
+    bank_name: "Bank Name"
+    name: "Name"
+    account_no: 'Account No'
+    transaction_reference_no: 'Transaction Reference No'

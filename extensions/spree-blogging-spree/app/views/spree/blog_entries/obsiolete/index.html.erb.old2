@@ -1,0 +1,16 @@
+<% categories = Spree::BlogEntry.visible.tag_counts_on(:categories).sort_by(&:count) %>
+<% if categories.present? %>
+  <div>
+    <ul>
+      <% categories.reverse.each do |category| %>
+        <h1><%= link_to category.name, blog_category_path(category.name) %> (<%= category.count %>)</h1>
+        <% @blog_entries = Spree::BlogEntry.visible.by_category(category).page(@pagination_page).per(@pagination_per_page) %>
+        <%= render :partial => 'spree/blog_entries/blog_entries'  %>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'spree/blog_entries/sidebar_index' %>
+<% end %>

@@ -1,0 +1,11 @@
+<h1>ABOUT US 品牌精神</h1>
+<br/>
+<br/>
+<h1>NEWS 最新消息</h1>
+<%= render :partial => 'spree/blog_entries/news_entries' %>
+<h1>COMMUNITY 社群迴響</h1>
+<%= render :partial => 'spree/blog_entries/blog_entries' %>
+
+<% content_for :sidebar do %>
+  <%= render :partial => 'spree/blog_entries/sidebar_index' %>
+<% end %>

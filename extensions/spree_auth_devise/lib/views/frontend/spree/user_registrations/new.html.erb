@@ -1,0 +1,41 @@
+<% @body_id = 'signup' %>
+
+<%= render :partial => 'spree/shared/error_messages', :locals => { :target => @user } %>
+
+<div id="new-customer">
+  <h6><%= Spree.t(:new_customer) %></h6>
+
+  <div data-hook="signup">
+    <%= form_for resource, :as => :spree_user, :url => spree.registration_path(@user) do |f| %>
+      <div data-hook="signup_inside_form">
+        <%= render :partial => 'spree/shared/user_form', :locals => { :f => f } %>
+
+        <%# -------- Add below --------- %>
+        <%# It uses the partial form 'spree/addresses/form from the extension 'spree_address_book' %>
+
+        <div>
+          <fieldset id="registration_address" >
+            <%#= fields_for @address do |address_form| %>
+            <%= form_for @address = Spree::Address.default do |addr_form| %>
+              <legend align="center"><%= Spree.t(:address) %></legend>
+              <%= render :partial => 'spree/addresses/form', :locals => {
+                :address_name => 'address',
+                :address_form => addr_form,
+                :address_type => 'registration',
+                :address => @address
+              } %>  
+            <% end %>
+          </fieldset>
+        </div>
+
+        <%# -------- Add above --------- %>
+        <br />
+        <p><%= f.submit Spree.t(:create), :class => 'button primary' %></p>
+      </div>
+    <% end %>
+    <%= Spree.t(:or) %>&nbsp;<%= link_to Spree.t(:login_as_existing), spree.login_path %>
+  </div>
+
+</div>
+
+<div data-hook="login_extras"></div>

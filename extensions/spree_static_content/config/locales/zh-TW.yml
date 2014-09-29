@@ -1,0 +1,36 @@
+zh-TW:
+  activerecord:
+    attributes:
+      spree/page:
+        body: 本文
+        foreign_link: "外部連結 (URL)"
+        layout: 版面編排
+        meta_description: "Meta Description"
+        meta_keywords: "Meta Keywords"
+        meta_title: "Meta Title"
+        position: 位置
+        render_layout_as_partial: "以 partial 的方式產生版面"
+        show_in_footer: "呈現於表尾中"
+        show_in_header: "呈現於表頭中"
+        show_in_sidebar: "呈現於側欄中"
+        slug: Slug
+        title: 標題
+        visible: 可見
+    models:
+      spree/page:
+        few: 網頁
+        many: 網頁
+        one: 網頁
+        other: 網頁
+  spree:
+    admin:
+      tab:
+        pages: 網頁
+    back_to_static_pages_list: "回到靜態網頁列表"
+    page: 網頁
+    pages: 網頁
+    static_content:
+      static_pages: 靜態網頁
+      new_page: 新增頁面
+      editing_page: 編輯頁面
+      link: 連結

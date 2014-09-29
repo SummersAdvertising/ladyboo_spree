@@ -1,0 +1,30 @@
+zh-TW:
+  billing_address: 帳單地址
+  shipping_address: 送貨地址
+  address_book:  
+    other_address: "其他地址"
+    add_new_address: "新增地址"
+    add_new_shipping_address: "新增送貨地址"
+    new_address: "新地址"
+    new_shipping_address: "新送貨地址"
+    edit_address: "編輯地址"
+    edit_shipping_address: "編輯送貨地址"
+    no_addresses_on_file: "檔案中無地址資料"
+    no_shipping_addresses_on_file: "檔案中無送貨地址"
+    shipping_addresses: "送貨地址"
+    successfully_saved: "儲存成功"
+    unsuccessfully_saved: "儲存地址時發生錯誤"
+    successfully_updated: "更新成功"
+    unsuccessfully_updated: "更新失敗"
+    successfully_removed: "已成功移除"
+    save: "儲存"
+    remove: "移除"
+    are_you_sure: "您確定？"
+    state: "州/省" 
+  spree:
+    address: 地址
+    edit: "編輯"
+    use_billing_address: "使用帳單地址"
+    address_book:  
+        state: "州/省"
+        address_book: 地址簿       

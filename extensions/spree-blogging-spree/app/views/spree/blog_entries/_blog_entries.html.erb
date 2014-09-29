@@ -1,0 +1,17 @@
+<div id="blog_entry_container">
+  <% if !@blog_entries.empty? %>
+    <%= link_to_previous_page @blog_entries, '<', param_name: :blog_page %>
+    <%= link_to_next_page @blog_entries, '>', param_name: :blog_page %>
+    <%#= paginate @blog_entries, param_name: :blog_page %>
+    <ul id="blog_entry_entries">
+      <% @blog_entries.each do |blog_entry| %>
+        <li>
+          <%= render :partial => 'spree/blog_entries/blog_entry', :locals => {:blog_entry => blog_entry} %>
+        </li>
+      <% end %>
+    </ul>
+  
+  <% else %>
+    <p id="no_entries"><%= Spree.t(:no_blog_entries) %></p>
+  <% end %>
+</div>  

@@ -1,0 +1,20 @@
+zh-TW:
+  spree:
+    favorite_products_settings: "我的最愛設定"
+    favorite_products_per_page: "每頁我的最愛數目"
+    favorite_products: "我的最愛"
+    mark_as_favorite: "標註為我的最愛"
+    unmark_as_favorite: "取消標註為我的最愛"
+    no_results: "查無結果"
+    you_have_no_favorite_products_yet: "尚無我的最愛"
+    listing_favorite_products: "我的最愛產品列表"
+    listing_favorite_products_users: "我的最愛產品使用者列表"
+    my_favorite_products: "我的最愛產品"
+    product_image: "產品圖片"
+    product_name: "產品名稱"
+    action: "動作"
+    remove: "移除"
+    removed: "已經成功的從我的最愛名單中移除"
+    marked: "已經標註為我的最愛"
+    are_you_sure_you_want_to_remove_the_product: "您確定要移除該項產品嗎？"
+    favorite_users: 愛用者數目

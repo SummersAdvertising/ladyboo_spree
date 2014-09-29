@@ -1,0 +1,8 @@
+zh-TW:
+  spree:
+    enable_rich_editor: 文字編輯器
+    rich_editor: 文字編輯器
+    rich_editor_description: 設定文字編輯器
+    rich_editor_engine: 文字編輯器引擎
+    rich_editor_ids: 文字編輯器之 Identificators
+    rich_editor_ids_description: "請在此列出 textarea 的 id，並用空白區隔。"

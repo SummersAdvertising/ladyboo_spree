@@ -1,0 +1,25 @@
+<div id="blog_entry_container">
+  <div id="blog_entry_entry">
+
+    <h1><%= @blog_entry.title %></h1>
+    <br/>
+    <%= image_tag(@blog_entry.blog_entry_image.attachment.url(:large)) if @blog_entry.blog_entry_image %><br />
+    <div class="blog_entry_body">
+      <%== @blog_entry.body.html_safe %>
+    </div>
+
+    <%= render :partial => 'spree/blog_entries/blog_entry_details', :locals => {:blog_entry => @blog_entry} %>
+  </div>
+
+  <%#= render :partial => 'spree/blog_entries/comments', :locals => {:blog_entry => @blog_entry}  %>
+</div> 
+
+<%# content_for :sidebar do %>
+  <%#= render :partial => 'spree/blog_entries/sidebar_show' %>
+<%# end %>
+
+<% content_for :head do %>
+  <% if !@blog_entry.author.blank? and !@blog_entry.author.google_plus_url.blank? %>
+    <link rel="author" href="<%= @blog_entry.author.google_plus_url %>"/>
+  <% end %>
+<% end %>

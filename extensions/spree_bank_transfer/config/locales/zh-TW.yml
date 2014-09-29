@@ -1,0 +1,21 @@
+zh-TW:
+  spree:
+    banks: "銀行"
+    listing_banks: "銀行列表"
+    back_to_banks_list: "回到銀行列表"
+    edit_bank: "編輯銀行資料"
+    new_bank:  "新增銀行"
+    additional_details: "附加明細"
+    payment_not_found: "無此筆付款"
+    payment_successfully_updated: "已成功更新此筆付款"
+    payment_reference_details: "付款相關明細"
+    bank_name: "銀行名稱"
+    name: "名稱"
+    account_no: '帳號'
+    transaction_reference_no: '交易代號'
+    deposited_on: "轉帳日期"
+    only_show_orders_with_bank_transfer_payment_reference_number: "只顯示有銀行轉帳代號的訂單"
+    payment_state: "付款狀態"
+    state: "狀態"
+    status: "狀態"
+    add_details: "輸入資料"

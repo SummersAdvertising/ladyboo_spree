@@ -1,0 +1,18 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  spree:
+    favorite_products_settings: "Favorite Products Settings"
+    favorite_products_per_page: "Per Page"
+    favorite_products: "Favorite Products"
+    mark_as_favorite: "Mark as favorite"
+    unmark_as_favorite: "Unmark as favorite"
+
+
+    are_you_sure_you_want_to_remove_the_product: 'Are you sure you want to remove the product?'
+    marked: "Product has been successfully marked as favorite"
+    removed: "Successfully removed favorite product from your list"
+
+
