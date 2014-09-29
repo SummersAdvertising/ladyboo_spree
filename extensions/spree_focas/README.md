@@ -19,6 +19,30 @@ bundle
 bundle exec rails g spree_focas:install
 ```
 
+Configuration
+-------------
+
+Add following lines:
+
+```# /app/controllers/application_controller.rb
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+
+  helper ActiveMerchant::Billing::Integrations::ActionViewHelper 
+end
+```
+
+```# /config/application.rb
+module Mystore
+  class Application < Rails::Application
+                     :
+                     :
+      config.after_initialize do  
+           Rails.configuration.spree.payment_methods << Spree::BillingIntegration::Focas
+  end
+end
+```
+
 Testing
 -------
 
