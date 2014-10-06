@@ -6,6 +6,8 @@ module Spree
     def update
       payment_details = PaymentDetails.new(@payment, payment_params)
       if payment_details.save
+        # Send email to administrator
+        BankTransferMailer.notify_email_to_admin(payment_details.payment.order_id).deliver
         flash[:notice] = Spree.t(:payment_successfully_updated)
       else
         flash[:error] = payment_details.errors.to_sentence

@@ -5,5 +5,14 @@ module Spree
 
       mail to: user.email, from: from_address, subject: Spree::Store.current.name + ' ' + I18n.t(:subject, :scope => [:devise, :mailer, :reset_password_instructions])
     end
+
+    #--------  Add below  -------
+    def welcome_email(user)
+      @user = user
+
+      subject = Spree.t(:welcome)
+      mail to: user.email, from: from_address, subject: subject
+    end
+    #--------  Add above  -------
   end
 end

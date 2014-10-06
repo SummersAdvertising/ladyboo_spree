@@ -67,7 +67,8 @@ gem 'spree_focas',             path: "../extensions/spree_focas"
 group :development do 
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-  gem 'pry'
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
   gem 'xray-rails'  
 end
 

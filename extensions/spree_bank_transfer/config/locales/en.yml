@@ -2,7 +2,6 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
   spree:
     payment_not_found: "Payment not found"
     payment_successfully_updated: "Payment successfully updated"
@@ -11,3 +10,4 @@ en:
     name: "Name"
     account_no: 'Account No'
     transaction_reference_no: 'Transaction Reference No'
+    bank_transfer_mailer: "Bank Transfer has completed"

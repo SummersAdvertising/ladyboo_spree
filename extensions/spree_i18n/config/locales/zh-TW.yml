@@ -987,20 +987,20 @@ zh-TW:
         message: If you have received this email, then your email settings are correct.
         subject: Testmail
     test_mode: 測試模式
-    thank_you_for_your_order: 
-    there_are_no_items_for_this_order: 
-    there_were_problems_with_the_following_fields: 
+    thank_you_for_your_order: 感謝您的訂購，請列印此頁留存紀錄
+    there_are_no_items_for_this_order: 此訂單無項目
+    there_were_problems_with_the_following_fields: 下列欄位有錯誤 
     thumbnail: 縮圖
     time: 時間
-    to_add_variants_you_must_first_define: 
+    to_add_variants_you_must_first_define: 必先定義類型，之後才能新增之
     total: 總金額
     tracking: 物流追蹤碼
     tracking_number: 追蹤號碼
     tracking_url: 追蹤網址
     tracking_url_placeholder: ! '例如: http://quickship.com/package?num=:tracking'
-    transfer_from_location: 
-    transfer_stock: 
-    transfer_to_location: 
+    transfer_from_location: 從 轉移
+    transfer_stock: 轉移庫存
+    transfer_to_location: 轉移至
     tree: 樹狀圖
     type: 類型
     type_to_search: 輸入搜尋關鍵字
@@ -1008,7 +1008,7 @@ zh-TW:
     under_price: Under %{price}
     unlock: 解鎖
     unrecognized_card_type: 無法辨識的信用卡類別
-    unshippable_items: 
+    unshippable_items: 未出貨項目
     update: 更新
     updating: 更新中
     usage_limit: 使用次數限制
@@ -1032,6 +1032,7 @@ zh-TW:
     variants: 系列型號
     version: 版本
     void: 無效
+    welcome: 歡迎
     weight: 重
     what_is_a_cvv: 什麼是 (CVV) 信用卡代碼?
     what_is_this: 這是什麼？

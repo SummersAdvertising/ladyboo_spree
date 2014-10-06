@@ -1,16 +1,8 @@
-<%= Spree.t('order_mailer.cancel_email.dear_customer') %>
+親愛的會員<%= @order.bill_address.last_name %><%= @order.bill_address.first_name %>，您好：
 
-<%= Spree.t('order_mailer.cancel_email.instructions') %>
+感謝您對 LadyBoo的支持，您的訂單已取消，訂單編號：<%= @order.number %>。
 
-============================================================
-<%= Spree.t('order_mailer.cancel_email.order_summary_canceled') %>
-============================================================
-<% @order.line_items.each do |item| %>
-  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> (<%=item.quantity%>) @ <%= item.single_money %> = <%= item.display_amount %>
-<% end %>
-============================================================
-<%= Spree.t('order_mailer.cancel_email.subtotal', :subtotal => @order.display_item_total) %>
-<% @order.adjustments.eligible.each do |adjustment| %>
-  <%= raw(adjustment.label) %> <%= adjustment.display_amount %>
-<% end %>
-<%= Spree.t('order_mailer.cancel_email.total', :total => @order.display_total) %>
+注意事項：
+此信件為系統自動寄送，勿直接回覆此信件
+
+ LadyBoo網站： ​http://www.ladybootw.com/

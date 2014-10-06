@@ -1,38 +1,22 @@
-<%= Spree.t('order_mailer.confirm_email.dear_customer') %>
+親愛的會員<%= @order.bill_address.last_name %><%= @order.bill_address.first_name %>，您好：
 
-<%= Spree.t('order_mailer.confirm_email.instructions') %>
+感謝您對 LadyBoo的支持，（訂單編號：<%= @order.number %>）
+本次<%= Spree.t('order_mailer.confirm_email.total', :total => @order.display_total) %>
 
-============================================================
-<%= Spree.t('order_mailer.confirm_email.order_summary') %>
-============================================================
-<% @order.line_items.each do |item| %>
-  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> (<%=item.quantity%>) @ <%= item.single_money %> = <%= item.display_amount %>
-<% end %>
-============================================================
-<%= Spree.t('order_mailer.confirm_email.subtotal', :subtotal => @order.display_item_total) %>
-<% if @order.line_item_adjustments.exists? %>
-  <% if @order.all_adjustments.promotion.eligible.exists? %>
-    <% @order.all_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
-<%= Spree.t(:promotion) %>: <%= label %> <%= Spree::Money.new(adjustments.sum(&:amount), currency: @order.currency) %>
-    <% end %>
-  <% end %>
+<% if @order.payments.last.payment_method.type == "Spree::PaymentMethod::BankTransfer"  %>
+
+轉帳戶名：女駙服飾有限公司
+銀行：（銀行代碼：）
+帳號：
+
+請於三日內進行匯款，謝謝。
+
 <% end %>
 
-<% @order.shipments.group_by { |s| s.selected_shipping_rate.try(:name) }.each do |name, shipments| %>
-<%= Spree.t(:shipping) %>: <%= name %> <%= Spree::Money.new(shipments.sum(&:discounted_cost), currency: @order.currency) %>
-<% end %>
+為了保護您的個人資料安全，本通知信將不顯示訂單明細。
 
-<% if @order.all_adjustments.eligible.tax.exists? %>
-  <% @order.all_adjustments.eligible.tax.group_by(&:label).each do |label, adjustments| %>
-<%= Spree.t(:tax) %>: <%= label %> <%= Spree::Money.new(adjustments.sum(&:amount), currency: @order.currency) %>
-  <% end %>
-<% end %>
+建議您可以登入 LadyBoo網站，查詢您的訂單以及處理進度。
+注意事項：
+此信件為系統自動寄送，勿直接回覆此信件
 
-<% @order.adjustments.eligible.each do |adjustment| %>
-  <% next if (adjustment.source_type == 'Spree::TaxRate') and (adjustment.amount == 0) %>
-<%= adjustment.label %> <%= adjustment.display_amount %>
-<% end %>
-============================================================
-<%= Spree.t('order_mailer.confirm_email.total', :total => @order.display_total) %>
-
-<%= Spree.t('order_mailer.confirm_email.thanks') %>
+ LadyBoo網站： ​http://www.ladybootw.com/

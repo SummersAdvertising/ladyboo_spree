@@ -33,7 +33,11 @@ module Spree
     # end
 
     def full_name
-      "#{firstname} #{lastname}".strip
+      if I18n.locale = 'zh-TW'
+        "#{lastname}#{firstname}".strip
+      else  
+        "#{firstname} #{lastname}".strip
+      end  
     end
 
     def state_text

@@ -1,3 +1,11 @@
-<p><%= @claim.message %></p>
-<p>---------------------</p>
-<p><%= "#{Spree.t(:sender)}: #{@claim.name}, email: #{@claim.email}" %></p>
+<p>親愛的管理員，您好：</p>
+
+<p>訂單編號：<%= @claim.order_number %></p>
+<p>於訂單中留言：<%= @claim.message %></p>
+
+<p>提醒您請盡速處理。</p>
+
+<p>注意事項：</p>
+<p>此信件為系統自動寄送，勿直接回覆此信件</p>
+
+<p>LadyBoo網站： ​http://www.ladybootw.com/</p>

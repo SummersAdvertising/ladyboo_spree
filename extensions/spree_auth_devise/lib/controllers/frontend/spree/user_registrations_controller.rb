@@ -34,6 +34,8 @@ class Spree::UserRegistrationsController < Devise::RegistrationsController
       session[:spree_user_signup] = true
       associate_user
       respond_with resource, location: after_sign_up_path_for(resource)
+      # Send welcome email while user has completed registration
+      Spree::UserMailer.welcome_email(@user).deliver
     else
       clean_up_passwords(resource)
       render :new

@@ -344,6 +344,10 @@ module Spree
 
     def deliver_order_confirmation_email
       OrderMailer.confirm_email(self.id).deliver
+      #----- Add below -----
+      # Send email to administrator while order confirmed.
+      OrderMailer.confirm_email_to_admin(self.id).deliver
+      #----- Add above -----
       update_column(:confirmation_delivered, true)
     end
 

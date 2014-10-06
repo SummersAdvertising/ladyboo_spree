@@ -19,3 +19,4 @@ zh-TW:
     state: "狀態"
     status: "狀態"
     add_details: "輸入資料"
+    bank_transfer_mailer: "銀行轉帳之訂單號碼"
